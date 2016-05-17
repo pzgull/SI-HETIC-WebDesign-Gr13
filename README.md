@@ -15,6 +15,7 @@ cd SI-HETIC-WebDesign-Gr13
 Installer les dépendances
 ```
 npm install
+bower install
 ```
 Compiler les sources
 ```
