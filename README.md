@@ -43,4 +43,5 @@ Le dossiers views contient l'arborescence de fichier .pug (ex- Jade). C'est un l
   - footer.pug ...... Footer
   - index.pug ........ Contenu du body
 
-(*) [Jade - Reference](http://jade-lang.com/reference/)
+> - [Jade - Reference](http://jade-lang.com/reference/)
+> - [ DevTips - Jade is Awesome](https://www.youtube.com/watch?v=wzAWI9h3q18)
