@@ -2,7 +2,9 @@ var gulp = require('gulp');
 var tools = {
   sass: require('gulp-sass'),
   pug: require('gulp-pug'),
-  cleanDir: require('gulp-dest-clean')
+  cleanDir: require('gulp-dest-clean'),
+  rename: require('gulp-rename'),
+  cssmin: require('gulp-cssmin')
 };
 
 var dist = {
@@ -12,7 +14,8 @@ var dist = {
 };
 
 var libs = {
-  jquery: 'lib/jquery/dist/jquery.min.js'
+  jquery: 'lib/jquery/dist/jquery.min.js',
+  normalize: 'lib/normalize-css/normalize.css'
 };
 
 gulp.task('build-views', function() {
@@ -23,12 +26,18 @@ gulp.task('build-views', function() {
   })).pipe(gulp.dest(dist.root));
 });
 
-gulp.task('build-jquery', function() {
-  return gulp.src(libs.jquery)
+gulp.task('build-libs', function() {
+  // jQuery
+  gulp.src(libs.jquery)
   .pipe(gulp.dest(dist.scripts));
+  // normalize-css
+  gulp.src(libs.normalize)
+  .pipe(tools.cssmin())
+  .pipe(tools.rename({ suffix: '.min'}))
+  .pipe(gulp.dest(dist.assets + 'css/'));
 });
 
-gulp.task('build-scripts', ['build-jquery'], function() {
+gulp.task('build-scripts', function() {
   return gulp.src('src/js/*.js')
   .pipe(tools.cleanDir(dist.scripts)
   ).pipe(gulp.dest(dist.scripts));
@@ -69,5 +78,6 @@ gulp.task('default', [
   'build-scss',
   'build-scripts',
   'build-views',
-  'build-assets'
+  'build-assets',
+  'build-libs'
 ]);
