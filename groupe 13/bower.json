@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "avalanche-css": "^1.1.1"
+    "avalanche-css": "^1.1.1",
+    "jquery": "^2.2.3"
   }
 }
