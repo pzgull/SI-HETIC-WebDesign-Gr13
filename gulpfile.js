@@ -30,10 +30,12 @@ gulp.task('build-jquery', function() {
 
 gulp.task('build-scripts', ['build-jquery'], function() {
   return gulp.src('src/js/*.js')
-  .pipe(gulp.dest(dist.scripts));
+  .pipe(tools.cleanDir(dist.scripts)
+  ).pipe(gulp.dest(dist.scripts));
 });
 
 gulp.task('build-scss', function() {
+  tools.cleanDir(dist.assets + 'css/');
   return gulp.src('src/scss/*.scss')
   .pipe(
     tools.sass(
@@ -44,4 +46,28 @@ gulp.task('build-scss', function() {
   );
 });
 
-gulp.task('default', ['build-scss', 'build-scripts', 'build-views']);
+gulp.task('build-assets', function() {
+  gulp.src('src/img/*')
+  .pipe(tools.cleanDir(dist.assets + 'img/')
+  ).pipe(gulp.dest(dist.assets + 'img/'));
+
+  gulp.src('src/fonts/*')
+  .pipe(tools.cleanDir(dist.assets + 'fonts/')
+  ).pipe(gulp.dest(dist.assets + 'fonts/'));
+
+});
+
+gulp.task('watch', function() {
+  gulp.watch('src/img/*', ['build-assets']);
+  gulp.watch('src/fonts/*', ['build-assets']);
+  gulp.watch('src/js/*.js', ['build-scripts']);
+  gulp.watch('src/scss/*.scss', ['build-scss']);
+  gulp.watch('src/views/**/*.pug', ['build-views']);
+});
+
+gulp.task('default', [
+  'build-scss',
+  'build-scripts',
+  'build-views',
+  'build-assets'
+]);
