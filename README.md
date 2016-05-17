@@ -10,6 +10,7 @@
 Cloner le repo pour avoir sa propre copie en local.
 ```
 git clone https://github.com/pzgull/SI-HETIC-WebDesign-Gr13.git
+cd SI-HETIC-WebDesign-Gr13
 ```
 Installer les dépendances
 ```
