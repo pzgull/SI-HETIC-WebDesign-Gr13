@@ -1,0 +1,22 @@
+{
+  "name": "sidesign-gr13",
+  "homepage": "https://github.com/pzgull/HETIC-SI-WEB1-2016",
+  "authors": [
+    "Pierre Dimitrou <dimitriou.pierrea@gmail.com>"
+  ],
+  "description": "SI Design Sexy - HETIC 2016 - Groupe 13",
+  "main": "dist/index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "avalanche-css": "^1.1.1"
+  }
+}
