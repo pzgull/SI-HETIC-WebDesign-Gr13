@@ -12,8 +12,10 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
     "gulp-dest-clean": "^0.5.0",
     "gulp-pug": "^3.0.2",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1"
   }
 }
