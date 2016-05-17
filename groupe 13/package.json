@@ -1,0 +1,11 @@
+{
+  "name": "sidesign-gr13",
+  "version": "0.0.1",
+  "description": "SI Design Sexy - HETIC 2016 - Groupe 13",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
