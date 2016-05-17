@@ -21,7 +21,10 @@ Compiler les sources
 ```
 npm run build
 ```
-
+En cours de développement, pour compiler automatiquement lorsqu'un fichier est modifié
+```
+npm run watch
+```
 > N.B: Le site tel qu'envoyé au client de trouve dans le dossier **dist/**
 
 ## Environnement ( src/ )
