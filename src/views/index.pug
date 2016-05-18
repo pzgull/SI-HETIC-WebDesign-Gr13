@@ -2,7 +2,18 @@ extends layout
 
 block content
 
-  h1 #{data.site.title}
+  section#piecesdetachees
 
-  each item in data.tiles
-    +tile(item.title, item.icon, item.color, item.href)
+    button(type="button") Pièce détachée
+
+    .tileset.grid__cell--center
+      // Coulb be .hidden
+      each item in data.tiles
+        .tile-wrap(class="1/2")
+          +tile(item.title, item.icon, item.color, item.href)
+
+    // TODO: Add arrow
+
+  section#recherche
+
+    h1 Recherche

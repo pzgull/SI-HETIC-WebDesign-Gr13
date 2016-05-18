@@ -2,6 +2,12 @@ header
   .top-header
     .logo-wrapper
       // TODO: Add logo img
+
+    form.search-form
+      input(type="text", placeholder="recherche...")
+      button(type="submit")
+        i(class="icon-search")
+
     button.connect Me connecter
     button.bucket Panier
 
@@ -9,3 +15,8 @@ header
     ul
       each item in data.topnav
         +navitem(item.title, item.icon, item.href)
+
+  section.slider
+    .counter
+      .dot
+        // Could be .active
