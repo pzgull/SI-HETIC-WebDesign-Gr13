@@ -60,11 +60,13 @@ block content
       .arrow-right
 
       each brand in ['bosh', 'brembo', 'thule']
-        img(src="#", alt=brand)
+        -var brandimg = "./assets/img/" + brand + ".png"
+        img(src=brandimg, alt=brand)
 
       .arrow-left
 
     h2 Ils parlent de Nous
 
-    each brand in ['TF1', 'France 2', 'RMC', 'M6', 'BFMTV', 'NRJ12']
-      img(src="#", alt=brand)
+    each brand in ['tf1', 'france2', 'rmc', 'm6', 'bfm', 'nrj12']
+      -var brandimg = "./assets/img/" + brand + ".png"
+      img(src=brandimg, alt=brand)
