@@ -16,7 +16,7 @@ var dist = {
 
 var libs = {
   jquery: 'lib/jquery/dist/jquery.min.js',
-  normalize: 'lib/normalize-css/normalize.css'
+  normalize: 'lib/normalize-css/normalize.css',
 };
 
 gulp.task('build-views', function() {
@@ -67,7 +67,12 @@ gulp.task('build-assets', function() {
 
 });
 
-gulp.task('watch', function() {
+gulp.task('build-bootstrap', function() {
+  gulp.src('lib/bootstrap-sass/assets/stylesheets/bootstrap/**/*.scss')
+  .pipe(gulp.dest('src/scss/bootstrap/'));
+});
+
+gulp.task('watch', ['default'], function() {
   gulp.watch('src/img/*', ['build-assets']);
   gulp.watch('src/fonts/*', ['build-assets']);
   gulp.watch('src/js/*.js', ['build-scripts']);
