@@ -1,5 +1,38 @@
 // COLORS
-$white:     "#FFFFFF";
-$lightgray: "#F6F6F6";
-$darkgray:  "#4C4C4D";
-$orange:    "#FF6600";
+$white:       #ffffff;
+$black:       #000000;
+$lightergray: #f8f8f8;
+$lightgray:   #f6f6f6;
+$darkgray:    #4c4c4d;
+$darkergray:  #2d2d2d;
+$orange:      #ff6600;
+$lightblue:   #219fbe;
+// FONTS
+
+@mixin tiles($width, $height) {
+  .tile {
+    width: $width;
+    height: $height;
+    &.orange {
+      background: $orange;
+      color: $lightergray;
+      &:hover {
+        background: darken($orange, 10%);
+      }
+    }
+    &.lightgray {
+      background: $lightgray;
+      color: $darkgray;
+      &:hover {
+        background: darken($lightgray, 10%);
+      }
+    }
+    &.darkgray {
+      background: $darkgray;
+      color: $lightergray;
+      &:hover {
+        background: darken($darkgray, 10%);
+      }
+    }
+  }
+}
