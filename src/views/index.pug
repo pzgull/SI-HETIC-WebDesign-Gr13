@@ -2,7 +2,9 @@ extends layout
 
 block content
 
-  .inner
+  .innerBody
+    section#slider
+      p Slider
     section#piecesdetachees
 
       button(type="button") Pièce détachée
@@ -12,7 +14,8 @@ block content
         each item in data.tiles
           +tile(item.title, item.icon, item.color, item.href)
 
-      // TODO: Add arrow
+      // Button Arrow
+      button.arrowUp
 
     section#recherche
 
@@ -26,15 +29,18 @@ block content
             li#cartegrise Par carte grise
         .display
           form.form-modele
-            input(type="text")
-            input(type="text")
-            input(type="text")
+            input(type="text" placeholder="Marque")
+            input(type="text" placeholder="Modèle")
+            input(type="text" placeholder="Motorisation")
+            input(type="submit" value="OK")
 
           form.form-immat
-            // TODO: Build form "immatriculation"
+            input(type="text" placeholder="Plaque d'immatriculation")
+            input(type="submit" value="OK")
 
           form.form-cartegrise
-            // TODO: Build form "carte grise"
+            input(type="text" placeholder="Entrez votre type mine")
+            input(type="submit" value="OK")
 
     section#partenaires
 
@@ -46,7 +52,7 @@ block content
           img(src="#")
 
         .display-info
-          h4 partenaires
+          h3 partenaires
 
     section#quotes
 
