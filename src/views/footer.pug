@@ -1,0 +1,32 @@
+footer
+
+  .banner
+
+    .newsletter
+      h3
+        | Newsletter
+        span.subtitle Votre email n'est pas valide
+
+      form.from-newletter
+        input(type="text")
+        button(type="submit") OK
+
+    .communaute
+      h3 Communauté
+      ul
+        each media in ['facebook', 'google+', 'twitter', 'pintereset']
+          li
+            i(class=media)
+
+      nav
+        ul
+          each item in ['Votre Commande', 'Aides & services', 'À propos']
+            li
+              | #{item}
+              i(class="arrow-down")
+
+      .display
+
+        each item in ['Livraison / Retour', 'Pont Relais', 'Paiement', 'Suivi de commande', 'Satisfait ou remboursé', 'Mentions légales', 'Conditions générales de vente', 'Conditions de livraison']
+          li
+            a(href="") #{item}
