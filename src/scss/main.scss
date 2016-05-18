@@ -5,7 +5,7 @@ header {
   background: $lightergray;
 }
 
-.inner {
+.innerHeader {
   width: 1280px;
   margin: 0 auto;
   padding: 55px 0;
@@ -14,6 +14,12 @@ header {
 .top-header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+header nav {
+  margin-top: 70px;
+  text-transform: uppercase;
 }
 
 header ul {
@@ -21,15 +27,45 @@ header ul {
   justify-content: space-between;
 }
 
+header a {
+  text-decoration: none;
+  font: 14px 'Futura Medium';
+  color: $black;
+}
+
+//BODY
+.innerBody {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+//SLIDER
+#slider {
+  background: $darkgray;
+  height: 830px;
+  text-align: center;
+}
+
 //TUILES
+#piecesdetachees button {
+  margin: 100px 0 130px;
+}
+
 .tileset {
-  @include tiles(236px, 236px);
+  @include tiles(235px, 235px);
   display: flex;
-  flex-direction: row;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
-  margin: 0 200px;
+  margin: 0 150px;
+}
+
+.tile h4 {
+  font: 15px Avenir;
+}
+
+.arrowUp {
+  margin: 130px auto 190px;
 }
 
 #piecesdetachees {
@@ -37,6 +73,38 @@ header ul {
 }
 
 //RECHERCHE PAR ONGLETS
-#recherche nav {
+#recherche h1 {
+  text-align: center;
+  font: 35px 'Futura Medium';
+  color: $darkgray;
+  margin-bottom: 130px;
+}
+
+.search-module ul {
   display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.search-module li {
+  padding: 35px 0;
+  font: 16px 'Futura Medium';
+}
+
+.search-module .display {
+  width: 940px;
+  height: 430px;
+  margin: 0 auto;
+  background: $lightgray;
+}
+
+//TYPOGRAPHIES
+@font-face {
+  font-family: 'Futura Medium';
+  src: url(../src/fonts/Futura-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url(../src/fonts/Avenir.ttc);
 }
