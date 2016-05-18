@@ -78,6 +78,7 @@ gulp.task('watch', ['default'], function() {
   gulp.watch('src/js/*.js', ['build-scripts']);
   gulp.watch('src/scss/*.scss', ['build-scss']);
   gulp.watch('src/views/**/*.pug', ['build-views']);
+  gulp.watch('src/data/*.js', ['build-views']);
 });
 
 gulp.task('default', [
