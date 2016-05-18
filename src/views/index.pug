@@ -7,7 +7,7 @@ block content
     button(type="button") Pièce détachée
 
     .tileset
-      // Coulb be .hidden
+      // Could be .hidden
       each item in data.tiles
         +tile(item.title, item.icon, item.color, item.href)
 
@@ -16,3 +16,54 @@ block content
   section#recherche
 
     h1 Recherche
+
+    .search-module
+      nav.tab-nab
+        ul
+          li#modele Par modèle
+          li#immat Par immatriculation
+          li#cartegrise Par carte grise
+      form.form-modele
+        input(type="text")
+        input(type="text")
+        input(type="text")
+
+      form.form-immat
+        // TODO: Build form "immatriculation"
+
+      form.form-cartegrise
+        // TODO: Build form "carte grise"
+
+  section#partenaires
+
+    h1 Garages partenaires
+
+    .wrapper
+
+      .map
+        img(src="#")
+
+      .display-info
+        h4 partenaires
+
+  section#quotes
+
+    blockquote «Site magnifique merci à toute l’équipe de ce site !»
+
+  section#grandesmarques
+    h1
+     | Les grandes marques
+     span.subtile Nous font confiance
+
+    .brand-carousel
+      .arrow-right
+
+      each brand in ['bosh', 'brembo', 'thule']
+        img(src="#", alt=brand)
+
+      .arrow-left
+
+    h2 Ils parlent de Nous
+
+    each brand in ['TF1', 'France 2', 'RMC', 'M6', 'BFMTV', 'NRJ12']
+      img(src="#", alt=brand)
