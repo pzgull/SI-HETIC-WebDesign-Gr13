@@ -1,22 +1,23 @@
 header
-  .top-header
-    .logo-wrapper
-      // TODO: Add logo img
+  .inner
+    .top-header
+      h1
+        img(src="assets/img/logo.png")
 
-    form.search-form
-      input(type="text", placeholder="recherche...")
-      button(type="submit")
-        i(class="icon-search")
+      form.search-form
+        input(type="text", placeholder="recherche...")
+        button(type="submit")
+          i(class="icon-search")
 
-    button.connect Me connecter
-    button.bucket Panier
+      button.connect Me connecter
+      button.bucket Panier
 
-  nav.topnav
-    ul
-      each item in data.topnav
-        +navitem(item.title, item.icon, item.href)
+    nav
+      ul
+        each item in data.topnav
+          +navitem(item.title, item.icon, item.href)
 
-  section.slider
-    .counter
-      .dot
-        // Could be .active
+    section.slider
+      .counter
+        .dot
+          // Could be .active

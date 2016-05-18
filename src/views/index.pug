@@ -2,69 +2,70 @@ extends layout
 
 block content
 
-  section#piecesdetachees
+  .inner
+    section#piecesdetachees
 
-    button(type="button") Pièce détachée
+      button(type="button") Pièce détachée
 
-    .tileset
-      // Could be .hidden
-      each item in data.tiles
-        +tile(item.title, item.icon, item.color, item.href)
+      .tileset
+        // Could be .hidden
+        each item in data.tiles
+          +tile(item.title, item.icon, item.color, item.href)
 
-    // TODO: Add arrow
+      // TODO: Add arrow
 
-  section#recherche
+    section#recherche
 
-    h1 Recherche
+      h1 Recherche
 
-    .search-module
-      nav.tab-nab
-        ul
-          li#modele Par modèle
-          li#immat Par immatriculation
-          li#cartegrise Par carte grise
-      .display
-        form.form-modele
-          input(type="text")
-          input(type="text")
-          input(type="text")
+      .search-module
+        nav
+          ul
+            li#modele Par modèle
+            li#immat Par immatriculation
+            li#cartegrise Par carte grise
+        .display
+          form.form-modele
+            input(type="text")
+            input(type="text")
+            input(type="text")
 
-        form.form-immat
-          // TODO: Build form "immatriculation"
+          form.form-immat
+            // TODO: Build form "immatriculation"
 
-        form.form-cartegrise
-          // TODO: Build form "carte grise"
+          form.form-cartegrise
+            // TODO: Build form "carte grise"
 
-  section#partenaires
+    section#partenaires
 
-    h1 Garages partenaires
+      h1 Garages partenaires
 
-    .wrapper
+      .wrapper
 
-      .map
-        img(src="#")
+        .map
+          img(src="#")
 
-      .display-info
-        h4 partenaires
+        .display-info
+          h4 partenaires
 
-  section#quotes
+    section#quotes
 
-    blockquote «Site magnifique merci à toute l’équipe de ce site !»
+      blockquote «Site magnifique merci à toute l’équipe de ce site !»
 
-  section#grandesmarques
-    h1
-     | Les grandes marques
-     span.subtile Nous font confiance
+    section#grandesmarques
+      h1
+       | Les grandes marques
+       span.subtile Nous font confiance
 
-    .brand-carousel
-      .arrow-right
+      .brand-carousel
+        .arrow-right
 
-      each brand in ['bosh', 'brembo', 'thule']
+        each brand in ['bosh', 'brembo', 'thule']
+          img(src="#", alt=brand)
+
+        .arrow-left
+
+      h2 Ils parlent de Nous
+
+      each brand in ['TF1', 'France 2', 'RMC', 'M6', 'BFMTV', 'NRJ12']
         img(src="#", alt=brand)
-
-      .arrow-left
-
-    h2 Ils parlent de Nous
-
-    each brand in ['TF1', 'France 2', 'RMC', 'M6', 'BFMTV', 'NRJ12']
-      img(src="#", alt=brand)
