@@ -13,16 +13,16 @@ module.exports = {
   ],
   tiles: [
     { title: "Freinage", icon: "", color: "orange", href: "#" },
-    { title: "Filtre", icon: "", color: "lightgray", href: "#" },
+    { title: "Filtre", icon: "", color: "lightergray", href: "#" },
     { title: "Direction", icon: "", color: "darkgray", href: "#" },
     { title: "Echappement", icon: "", color: "darkgray", href: "#" },
     { title: "Moteur", icon: "", color: "orange", href: "#" },
-    { title: "Embrayage", icon: "", color: "lightgray", href: "#" },
-    { title: "Batterie", icon: "", color: "lightgray", href: "#" },
+    { title: "Embrayage", icon: "", color: "lightergray", href: "#" },
+    { title: "Batterie", icon: "", color: "lightergray", href: "#" },
     { title: "Chauffage", icon: "", color: "darkgray", href: "#" },
-    { title: "Carroserie", icon: "", color: "lightgray", href: "#" },
+    { title: "Carroserie", icon: "", color: "lightergray", href: "#" },
     { title: "Visibilité", icon: "", color: "orange", href: "#" },
-    { title: "Habitacle", icon: "", color: "lightgray", href: "#" },
+    { title: "Habitacle", icon: "", color: "lightergray", href: "#" },
     { title: "Roue", icon: "", color: "darkgray", href: "#" }
   ]
 };
