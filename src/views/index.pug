@@ -6,11 +6,10 @@ block content
 
     button(type="button") Pièce détachée
 
-    .tileset.grid__cell--center
+    .tileset
       // Coulb be .hidden
       each item in data.tiles
-        .tile-wrap(class="1/2")
-          +tile(item.title, item.icon, item.color, item.href)
+        +tile(item.title, item.icon, item.color, item.href)
 
     // TODO: Add arrow
 
