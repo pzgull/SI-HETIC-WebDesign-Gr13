@@ -1,0 +1,9 @@
+mixin navitem(title, iconclass, href)
+  li
+    i(class=iconclass)
+    a(href=href, title=title) #{title}
+
+mixin tile(title, iconclass, color, href)
+  div.tile(class=color)
+    i(class=iconclass)
+      h4 #{title}

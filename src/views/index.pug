@@ -2,4 +2,7 @@ extends layout
 
 block content
 
-  h1 #{data.title}
+  h1 #{data.site.title}
+
+  each item in data.tiles
+    +tile(item.title, item.icon, item.color, item.href)

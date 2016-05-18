@@ -1,0 +1,11 @@
+header
+  .top-header
+    .logo-wrapper
+      // TODO: Add logo img
+    button.connect Me connecter
+    button.bucket Panier
+
+  nav.topnav
+    ul
+      each item in data.topnav
+        +navitem(item.title, item.icon, item.href)
