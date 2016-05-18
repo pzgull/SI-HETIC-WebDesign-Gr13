@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var data = require('./src/data/data.js');
 var tools = {
   sass: require('gulp-sass'),
   pug: require('gulp-pug'),
@@ -22,7 +23,7 @@ gulp.task('build-views', function() {
   return gulp.src('src/views/index.pug')
   .pipe(tools.pug({
     pretty: true,
-    locals: { data: require('./src/data/menu.js') }
+    locals: { data: data }
   })).pipe(gulp.dest(dist.root));
 });
 
