@@ -3,7 +3,7 @@ mixin navitem(title, iconclass, href)
     i(class=iconclass)
     a(href=href, title=title) #{title}
 
-mixin tile(title, iconclass, color, href)
+mixin tile(title, img, color, href)
   div.tile(class=color)
-    i(class=iconclass)
-      h4 #{title}
+    img(src=img, alt=title)
+    h4 #{title}

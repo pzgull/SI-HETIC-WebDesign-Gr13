@@ -2,7 +2,9 @@ extends layout
 
 block content
 
-  .inner
+  .innerBody
+    section#slider
+      p Slider
     section#piecesdetachees
 
       button(type="button") Pièce détachée
@@ -12,7 +14,8 @@ block content
         each item in data.tiles
           +tile(item.title, item.icon, item.color, item.href)
 
-      // TODO: Add arrow
+      // Button Arrow
+      button.arrowUp
 
     section#recherche
 
@@ -26,15 +29,18 @@ block content
             li#cartegrise Par carte grise
         .display
           form.form-modele
-            input(type="text")
-            input(type="text")
-            input(type="text")
+            input(type="text" placeholder="Marque")
+            input(type="text" placeholder="Modèle")
+            input(type="text" placeholder="Motorisation")
+            input(type="submit" value="OK")
 
           form.form-immat
-            // TODO: Build form "immatriculation"
+            input(type="text" placeholder="Plaque d'immatriculation")
+            input(type="submit" value="OK")
 
           form.form-cartegrise
-            // TODO: Build form "carte grise"
+            input(type="text" placeholder="Entrez votre type mine")
+            input(type="submit" value="OK")
 
     section#partenaires
 
@@ -46,7 +52,7 @@ block content
           img(src="#")
 
         .display-info
-          h4 partenaires
+          h3 partenaires
 
     section#quotes
 
@@ -60,12 +66,14 @@ block content
       .brand-carousel
         .arrow-right
 
-        each brand in ['bosh', 'brembo', 'thule']
-          img(src="#", alt=brand)
+      each brand in ['bosh', 'brembo', 'thule']
+        -var brandimg = "./assets/img/" + brand + ".png"
+        img(src=brandimg, alt=brand)
 
         .arrow-left
 
       h2 Ils parlent de Nous
 
-      each brand in ['TF1', 'France 2', 'RMC', 'M6', 'BFMTV', 'NRJ12']
-        img(src="#", alt=brand)
+    each brand in ['tf1', 'france2', 'rmc', 'm6', 'bfm', 'nrj12']
+      -var brandimg = "./assets/img/" + brand + ".png"
+      img(src=brandimg, alt=brand)

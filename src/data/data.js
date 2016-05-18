@@ -1,3 +1,5 @@
+var path = "./assets/img/";
+
 module.exports = {
   site: {
     title: 'Yakarouler.com'
@@ -12,17 +14,17 @@ module.exports = {
     { title: "Moto", icon: "", href: "#", subcat: [] }
   ],
   tiles: [
-    { title: "Freinage", icon: "", color: "orange", href: "#" },
-    { title: "Filtre", icon: "", color: "lightergray", href: "#" },
-    { title: "Direction", icon: "", color: "darkgray", href: "#" },
-    { title: "Moteur", icon: "", color: "orange", href: "#" },
-    { title: "Echappement", icon: "", color: "darkgray", href: "#" },
-    { title: "Carroserie", icon: "", color: "orange", href: "#" },
-    { title: "Embrayage", icon: "", color: "lightergray", href: "#" },
-    { title: "Chauffage", icon: "", color: "darkgray", href: "#" },
-    { title: "Visibilité", icon: "", color: "orange", href: "#" },
-    { title: "Batterie", icon: "", color: "lightergray", href: "#" },
-    { title: "Roue", icon: "", color: "darkgray", href: "#" },
-    { title: "Habitacle", icon: "", color: "lightergray", href: "#" }
+    { title: "Freinage", src: path + "", color: "orange", href: "#" },
+    { title: "Filtre", src: path + "", color: "lightergray", href: "#" },
+    { title: "Direction", src: path + "", color: "darkgray", href: "#" },
+    { title: "Moteur", src: path + "", color: "orange", href: "#" },
+    { title: "Echappement", src: path + "", color: "darkgray", href: "#" },
+    { title: "Carroserie", src: path + "", color: "orange", href: "#" },
+    { title: "Embrayage", src: path + "", color: "lightergray", href: "#" },
+    { title: "Chauffage", src: path + "", color: "darkgray", href: "#" },
+    { title: "Visibilité", src: path + "", color: "orange", href: "#" },
+    { title: "Batterie", src: path + "", color: "lightergray", href: "#" },
+    { title: "Roue", src: path + "", color: "darkgray", href: "#" },
+    { title: "Habitacle", src: path + "", color: "lightergray", href: "#" }
   ]
 };
