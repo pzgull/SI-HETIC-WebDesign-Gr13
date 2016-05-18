@@ -20,11 +20,11 @@ $lightblue:   #219fbe;
         background: darken($orange, 10%);
       }
     }
-    &.lightgray {
-      background: $lightgray;
+    &.lightergray {
+      background: $lightergray;
       color: $darkgray;
       &:hover {
-        background: darken($lightgray, 10%);
+        background: darken($lightergray, 10%);
       }
     }
     &.darkgray {

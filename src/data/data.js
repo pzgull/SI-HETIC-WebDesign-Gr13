@@ -1,6 +1,6 @@
 module.exports = {
   site: {
-    title: 'Hello, World!'
+    title: 'Yakarouler.com'
   },
   topnav: [
     { title: "Pneus et jantes", icon: "", href: "#", subcat: [] },
@@ -15,14 +15,14 @@ module.exports = {
     { title: "Freinage", icon: "", color: "orange", href: "#" },
     { title: "Filtre", icon: "", color: "lightergray", href: "#" },
     { title: "Direction", icon: "", color: "darkgray", href: "#" },
-    { title: "Echappement", icon: "", color: "darkgray", href: "#" },
     { title: "Moteur", icon: "", color: "orange", href: "#" },
+    { title: "Echappement", icon: "", color: "darkgray", href: "#" },
+    { title: "Carroserie", icon: "", color: "orange", href: "#" },
     { title: "Embrayage", icon: "", color: "lightergray", href: "#" },
-    { title: "Batterie", icon: "", color: "lightergray", href: "#" },
     { title: "Chauffage", icon: "", color: "darkgray", href: "#" },
-    { title: "Carroserie", icon: "", color: "lightergray", href: "#" },
     { title: "Visibilité", icon: "", color: "orange", href: "#" },
-    { title: "Habitacle", icon: "", color: "lightergray", href: "#" },
-    { title: "Roue", icon: "", color: "darkgray", href: "#" }
+    { title: "Batterie", icon: "", color: "lightergray", href: "#" },
+    { title: "Roue", icon: "", color: "darkgray", href: "#" },
+    { title: "Habitacle", icon: "", color: "lightergray", href: "#" }
   ]
 };

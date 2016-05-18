@@ -2,71 +2,88 @@ extends layout
 
 block content
 
-  section#piecesdetachees
+  .innerBody
+    section#slider
+      p Slider
+    section#piecesdetachees
 
-    button(type="button") Pièce détachée
+      button(type="button") Pièce détachée
 
-    .tileset
-      // Could be .hidden
-      each item in data.tiles
-        +tile(item.title, item.icon, item.color, item.href)
+      .tileset
+        // Could be .hidden
+        each item in data.tiles
+          +tile(item.title, item.icon, item.color, item.href)
 
-    // TODO: Add arrow
+      // Button Arrow
+      button.arrowUp
 
-  section#recherche
+    section#recherche
 
-    h1 Recherche
+      h1 Recherche
 
-    .search-module
-      nav.tab-nab
-        ul
-          li#modele Par modèle
-          li#immat Par immatriculation
-          li#cartegrise Par carte grise
-      .display
-        form.form-modele
-          input(type="text")
-          input(type="text")
-          input(type="text")
+      .search-module
+        nav
+          ul
+            li#modele Par modèle
+            li#immat Par immatriculation
+            li#cartegrise Par carte grise
+        .display
+          form.form-modele
+            input(type="text" placeholder="Marque")
+            input(type="text" placeholder="Modèle")
+            input(type="text" placeholder="Motorisation")
+            input(type="submit" value="OK")
 
-        form.form-immat
-          // TODO: Build form "immatriculation"
+          form.form-immat
+            input(type="text" placeholder="Plaque d'immatriculation")
+            input(type="submit" value="OK")
 
-        form.form-cartegrise
-          // TODO: Build form "carte grise"
+          form.form-cartegrise
+            input(type="text" placeholder="Entrez votre type mine")
+            input(type="submit" value="OK")
 
-  section#partenaires
+    section#partenaires
 
-    h1 Garages partenaires
+      h1 Garages partenaires
 
-    .wrapper
+      .wrapper
 
-      .map
-        img(src="#")
+        .map
+          img(src="#")
 
-      .display-info
-        h4 partenaires
+        .display-info
+          h3 partenaires
 
-  section#quotes
+    section#quotes
 
-    blockquote «Site magnifique merci à toute l’équipe de ce site !»
+      blockquote «Site magnifique merci à toute l’équipe de ce site !»
 
-  section#grandesmarques
-    h1
-     | Les grandes marques
-     span.subtile Nous font confiance
+    section#grandesmarques
+      h1
+       | Les grandes marques
+       span.subtile Nous font confiance
 
-    .brand-carousel
-      .arrow-right
+      .brand-carousel
+        .arrow-right
 
+<<<<<<< HEAD
       each brand in ['bosh', 'brembo', 'thule']
         -var brandimg = "./assets/img/" + brand + ".png"
         img(src=brandimg, alt=brand)
+=======
+        each brand in ['bosh', 'brembo', 'thule']
+          img(src="#", alt=brand)
+>>>>>>> 904af7406a6a1ec8d070c718dc8288d5648ee529
 
-      .arrow-left
+        .arrow-left
 
-    h2 Ils parlent de Nous
+      h2 Ils parlent de Nous
 
+<<<<<<< HEAD
     each brand in ['tf1', 'france2', 'rmc', 'm6', 'bfm', 'nrj12']
       -var brandimg = "./assets/img/" + brand + ".png"
       img(src=brandimg, alt=brand)
+=======
+      each brand in ['TF1', 'France 2', 'RMC', 'M6', 'BFMTV', 'NRJ12']
+        img(src="#", alt=brand)
+>>>>>>> 904af7406a6a1ec8d070c718dc8288d5648ee529
