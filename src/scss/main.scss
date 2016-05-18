@@ -1,5 +1,42 @@
 @import "inc/base";
 
+//HEADER
+header {
+  background: $lightergray;
+}
+
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+//TUILES
 .tileset {
   @include tiles(236px, 236px);
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0 200px;
+}
+
+#piecesdetachees {
+  text-align: center;
+}
+
+//RECHERCHE PAR ONGLETS
+#recherche nav {
+  display: flex;
 }
