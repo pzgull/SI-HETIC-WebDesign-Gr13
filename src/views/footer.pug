@@ -14,9 +14,10 @@ footer
       .communaute
         h3 Communauté
         ul
-          each media in ['facebook', 'google+', 'twitter', 'pintereset']
+          each media in ['facebook', 'google-plus', 'twitter', 'pinterest']
+            -var icon = 'flaticon-' + media
             li
-              i(class=media)
+              i(class=icon)
 
     nav
       ul
