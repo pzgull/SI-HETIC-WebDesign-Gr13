@@ -5,14 +5,14 @@ module.exports = {
     title: 'Yakarouler.com'
   },
   topnav: [
-    { title: "Pneus et jantes", icon: "", href: "#", subcat: [] },
-    { title: "Batteries", icon: "", href: "#", subcat: [] },
-    { title: "Accessoires et entretien", icon: "", href: "#", subcat: [] },
-    { title: "Son tel et alamarmes", icon: "", href: "#", subcat: [] },
-    { title: "Carrosserie", icon: "", href: "#", subcat: [] },
-    { title: "Outillage", icon: "", href: "#", subcat: [] },
-    { title: "Moto", icon: "", href: "#", subcat: [] },
-    { title: "Magasins", icon: "", href: "#", subcat: [] }
+    { title: "Pneus et jantes", icon: path + "pneus.png", href: "#", subcat: [] },
+    { title: "Batteries", icon: path + "batterie-nav.png", href: "#", subcat: [] },
+    { title: "Accessoires et entretien", icon: path + "accessoire.png", href: "#", subcat: [] },
+    { title: "Son tel et alarmes", icon: path + "phone.png", href: "#", subcat: [] },
+    { title: "Carrosserie", icon: path + "carrosserie-nav.png", href: "#", subcat: [] },
+    { title: "Outillage", icon: path + "outils.png", href: "#", subcat: [] },
+    { title: "Moto", icon: path + "moto.png", href: "#", subcat: [] },
+    { title: "Magasins", icon: path + "magasins.png", href: "#", subcat: [] }
   ],
   tiles: [
     { title: "Freinage", src: path + "freinage.png", color: "orange", href: "#" },
