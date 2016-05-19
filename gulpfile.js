@@ -34,8 +34,7 @@ gulp.task('build-libs', function() {
 
 gulp.task('build-scripts', function() {
   return gulp.src('src/js/*.js')
-  .pipe(tools.cleanDir(dist.scripts)
-  ).pipe(gulp.dest(dist.scripts));
+  .pipe(gulp.dest(dist.scripts));
 });
 
 gulp.task('build-scss', function() {
