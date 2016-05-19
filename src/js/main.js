@@ -24,7 +24,7 @@ $(document).ready(function() {
     $(this).find('.display')
     .children('form').each(function(elt) {
       $(this).removeClass('active');
-    })
+    });
   });
 
   $('.buttonPieces').on('click', function(e) {
