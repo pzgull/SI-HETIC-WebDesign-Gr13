@@ -1,32 +1,32 @@
 footer
 
-  .banner
+  .innerFooter
+    .top-footer
+      .newsletter
+        h3
+          | Newsletter
+          span Votre email n'est pas valide
 
-    .newsletter
-      h3
-        | Newsletter
-        span.subtitle Votre email n'est pas valide
+        form.from-newletter
+          input(type="text")
+          button(type="submit") OK
 
-      form.from-newletter
-        input(type="text")
-        button(type="submit") OK
-
-    .communaute
-      h3 Communauté
-      ul
-        each media in ['facebook', 'google+', 'twitter', 'pintereset']
-          li
-            i(class=media)
-
-      nav
+      .communaute
+        h3 Communauté
         ul
-          each item in ['Votre Commande', 'Aides & services', 'À propos']
+          each media in ['facebook', 'google+', 'twitter', 'pintereset']
             li
-              | #{item}
-              i(class="arrow-down")
+              i(class=media)
 
-      .display
-
-        each item in ['Livraison / Retour', 'Pont Relais', 'Paiement', 'Suivi de commande', 'Satisfait ou remboursé', 'Mentions légales', 'Conditions générales de vente', 'Conditions de livraison']
+    nav
+      ul
+        each item in ['Votre Commande', 'Aides & services', 'À propos']
           li
-            a(href="") #{item}
+            | #{item}
+            i(class="arrow-down")
+
+  .display
+
+    each item in ['Livraison / Retour', 'Pont Relais', 'Paiement', 'Suivi de commande', 'Satisfait ou remboursé', 'Mentions légales', 'Conditions générales de vente', 'Conditions de livraison']
+      li
+        a(href="") #{item}
