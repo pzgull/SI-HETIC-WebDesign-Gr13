@@ -15,8 +15,7 @@ var dist = {
 };
 
 var libs = {
-  jquery: 'lib/jquery/dist/jquery.min.js',
-  normalize: 'lib/normalize-css/normalize.css',
+  jquery: 'lib/jquery/dist/jquery.min.js'
 };
 
 gulp.task('build-views', function() {
@@ -31,11 +30,6 @@ gulp.task('build-libs', function() {
   // jQuery
   gulp.src(libs.jquery)
   .pipe(gulp.dest(dist.scripts));
-  // normalize-css
-  gulp.src(libs.normalize)
-  .pipe(tools.cssmin())
-  .pipe(tools.rename({ suffix: '.min'}))
-  .pipe(gulp.dest(dist.assets + 'css/'));
 });
 
 gulp.task('build-scripts', function() {
@@ -65,11 +59,6 @@ gulp.task('build-assets', function() {
   .pipe(tools.cleanDir(dist.assets + 'fonts/')
   ).pipe(gulp.dest(dist.assets + 'fonts/'));
 
-});
-
-gulp.task('build-bootstrap', function() {
-  gulp.src('lib/bootstrap-sass/assets/stylesheets/bootstrap/**/*.scss')
-  .pipe(gulp.dest('src/scss/bootstrap/'));
 });
 
 gulp.task('watch', ['default'], function() {
