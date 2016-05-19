@@ -1,0 +1,615 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: "Futura";
+    src: url('../font/ufonts.com_futura-medium.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src : url('../font/Avenir.ttc')
+}
+
+body {
+    width: 100%;
+    height:auto;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h4, h3 {
+    font: inherit;
+    margin:0;
+}
+
+@media screen and (min-width: 800px) {
+    /* span */
+    .vert {
+        color: #44bb24;
+    }
+
+    .orange {
+        color: #ff6600;
+        font-size: 20px;
+    }
+
+    /* Display None */
+    #burgerresponsive, #produitimagemobile, #client, .social, .links, #slide2, .note, .prix, .euros, .stockmob {  display: none;}
+
+
+    /* INFORMATIONS */
+
+
+    #produitweb {
+        float: left;
+        margin-left: 170px;
+        margin-top: 30px;
+    }
+
+    #produitmobile {
+        width: 800px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .produitimagemobile, #informationmobile {
+        display: inline-block;
+    }
+
+    #informationmobile{
+        margin-left: 50px;
+        height: 350px;
+        vertical-align: top;
+    }
+
+    #informationmobile li {
+        margin-top: 10px;
+        font-family: "Futura";
+        font-size: 16px;
+        margin-left: 15%;
+        width: 250px;
+    }
+
+    .note2 p{
+
+        margin-right: 8%;
+        margin-top: 0;
+    }
+
+    .stockweb {
+        font-family: "Futura";
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .shop {
+        background-image: url("../img/boutonweb.png") ;
+        width: 80px;
+        height: 42px;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+
+    /* FIN INFORMATIONS */
+
+
+    /*DEBUT ACCORDION*/
+
+    #accordion {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #accordion p {
+        width: 500px;
+        font-size: 14px;
+        margin-left: 9%;
+        text-align: center;
+        font-family: 'Avenir';
+    }
+
+    #accordion a{
+        text-decoration: none;
+        color:#ff6600;
+    }
+
+    #accordion h4{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*FIN ACCORDION*/
+
+
+    /* block description*/
+
+    .description {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Futura";
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .description:after{
+        content: "";
+        width: 70px;
+        height: 4px;
+        background-color: #ff6600;
+        display: block;
+        margin-left: 100px;
+        margin-top: 5px;
+    }
+
+    .resume{
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Avenir';
+    }
+
+    .utilisation, .performance, .conseil h4 {
+        text-align: center;
+        font-family: "Futura";
+    }
+
+    .utilisation, .performance, .conseil {
+        width: 422px;
+        margin-top: 40px;
+    }
+
+    .utilisation, .performance, .conseil p {
+        font-size: 20px;
+        font-family: 'Avenir';
+        text-align: left;
+    }
+
+    .utilisation, .performance {
+        display: inline-block;
+    }
+
+    .performance {
+        margin-left: 50px;
+    }
+
+    .conseil {
+        margin: 0 auto;
+        width: 460px;
+        text-align: center;
+        font-family: 'Avenir';
+    }
+
+    /* Fin block description*/
+
+    /*Debut Produits Simulaire */
+
+    .simulairemobile {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Futura";
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .simulairemobile::after{
+        content: "";
+        width: 70px;
+        height: 4px;
+        background-color: #ff6600;
+        display: block;
+        margin-left: 130px;
+        margin-top: 5px;
+    }
+
+    #slide2 {
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 35px;
+
+    }
+
+    #slide2 li {
+        float: left;
+    }
+
+    /*Fin Produits Simulaire */
+
+    /*ARTICLES*/
+    #articles h3 {
+        padding: 6px 0 6px 0;
+        border-radius: 8px;
+        font-size: 30px;
+        border: 3px solid #ff6600;
+        color: #000;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: "Futura";
+
+    }
+
+    #slide {
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+/*Media Screen*/
+
+@media screen and (max-width: 800px) {
+
+    /* span */
+
+    .vert{ color: #44bb24; font-size: 15px; }
+    .orange{ color:#ff6600; font-size: 18px; }
+
+    /* Display none */
+
+    #produitweb, .note2, .prix2, #slide, .stockweb {
+        display: none;
+    }
+
+
+    /*MENU BURGER RESPONSIVE MOBILE*/
+
+    @keyframes slidein {
+        from {
+            margin-left:-500px;
+        }
+
+        to {
+            margin-left: 0px;
+        }
+    }
+
+    @keyframes slideout {
+        from {
+            margin-left: 0px;
+        }
+
+        to {
+            margin-left:-500px;
+        }
+    }
+
+    @font-face {
+        font-family: "Futura";
+        src: url('/font/ufonts.com_futura-medium.ttf');
+    }
+
+    body{
+        letter-spacing: 3px;
+        font-family: "Futura";
+    }
+
+    header{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .mobile{
+        width: 360px;
+        height: auto;
+    }
+
+    .burger{
+        margin-left: 55px;
+        z-index:101;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    header img{
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+
+    .barreBurger{
+        width: 35px;
+        height: 5px;
+        background-color: #4c4c4d;
+        margin-bottom : 5px;
+        margin-right: 45px;
+    }
+
+    .menu {
+        position:fixed;
+        width: 280px;
+        height:100vh;
+        box-sizing: border-box;
+        background-color:white;
+        display:none;
+        margin-top:-40px;
+        animation: slideout 2s;
+    }
+
+    .menu.hidden{
+        display: block;
+        animation: slidein 2s;
+    }
+
+    .menu nav i{
+        float: right;
+        margin-bottom: 5px;
+        display: inline-block;
+        margin-right: 25px;
+        margin-top: -13px;
+    }
+
+    .menu nav{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .menu nav.connect{
+        margin-top: 120px;
+    }
+
+    .menu nav ul li{
+        margin-bottom: 25px;
+    }
+
+    .menu nav.connect ul li{
+        height: 50px;
+        display: inline-block;
+    }
+
+    .menu nav ul li a{
+        text-decoration: none;
+        color : #4c4c4d;
+    }
+
+    .menu nav ul li a:hover{
+        color : #ff6600;
+        transition-duration: 1s;
+    }
+
+    .hidden{
+        display:none;
+    }
+
+    .active{
+        transition-duration: 1s;
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+    }
+
+    .active2{
+        margin-top: -10px;
+        -webkit-transform: rotateZ(-45deg);
+        -moz-transform: rotateZ(-45deg);
+        -ms-transform: rotateZ(-45deg);
+        -o-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+        transition-duration: 1s;
+    }
+
+    .social{
+        width:100%;
+        height: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f6f6f6;
+        margin-bottom : 25px;
+    }
+
+    .social a{
+        text-decoration: none;
+    }
+
+    .social ul li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links ul li {
+        line-height: 30px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .links ul li a{
+        text-decoration: none;
+        color : #4c4c4d;
+        transition-duration: 1s;
+    }
+
+    .links ul li a:hover {
+        color : #ff6600;
+    }
+
+    /* Fin burger*/
+
+    /* Produit*/
+    #produitmobile{
+        text-align: center;
+    }
+
+    #produitimagemobile {
+        background-image: url("../img/produitmob.png");
+        width: 180px;
+        height: 245px;
+        margin-left: 33%;
+    }
+
+    #informationmobile h2 {
+        font-family: "Futura";
+    }
+
+    #informationmobile li {
+        margin-top: 20px;
+        font-family: 'Avenir';
+    }
+
+    #informationmobile p {
+        font-family: 'Avenir';
+        font-size: 12px;
+    }
+
+    /* Fin Produit*/
+
+    /* Debut Detail Produit*/
+
+    .prix, .note, .description  {
+        text-align: left;
+        background-color: #f6f6f6;
+        height: 30px;
+        line-height: 2;
+        padding-left: 8%;
+        font-family: "Futura";
+    }
+
+    .euros {
+        height: 15px;
+    }
+
+    .shop {
+        margin: 30px 0 30px 0;
+        background-image: url("../img/boutonmob.png");
+        margin-left: 45%;
+        width: 50px;
+        height: 27px;
+    }
+
+    #client {
+        height: 15px;
+    }
+
+    #client p {
+        float: left;
+        margin: 0 1% 0 8%;
+        margin-left: 8%;
+    }
+
+    /* Fin Detail Produit*/
+
+    /*accordion*/
+
+    #accordion {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    #accordion p {
+        font-size: 12px;
+    }
+
+    #accordion a{
+        text-decoration: none;
+        color:#ff6600;
+    }
+
+    #accordion h4{
+        margin-top: 20px;
+    }
+
+    /*Fin accordion */
+
+
+    /*Debut Produits Simulaire */
+
+    .simulairemobile {
+        text-align: left;
+        background-color: #f6f6f6;
+        height: 30px;
+        padding-left: 8%;
+        line-height: 2;
+        margin-top: 30px;
+    }
+
+    #slide2 {
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 35px;
+
+    }
+
+    #slide2 li {
+        float: left;
+        margin-bottom: 30px;
+    }
+
+    /*Fin Produits Simulaire */
+
+    /*Debut Reseau Sociaux*/
+
+    .social{
+        width:100%;
+        height: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f6f6f6;
+        margin-bottom : 25px;
+    }
+
+    .social a{
+        text-decoration: none;
+    }
+
+    .social ul li {
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    /*Fin Reseau Sociaux*/
+
+    /*Debut Footer*/
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links ul li {
+        line-height: 30px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .links ul li a{
+        text-decoration: none;
+        color : #4c4c4d;
+        transition-duration: 1s;
+    }
+
+    .links ul li a:hover {
+        color : #ff6600;
+    }
+
+    /*fin Footer*/
+}
+
+
