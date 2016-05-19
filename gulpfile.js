@@ -5,7 +5,8 @@ var tools = {
   pug: require('gulp-pug'),
   cleanDir: require('gulp-dest-clean'),
   rename: require('gulp-rename'),
-  cssmin: require('gulp-cssmin')
+  cssmin: require('gulp-cssmin'),
+  autoprefixer: require('gulp-autoprefixer')
 };
 
 var dist = {
@@ -44,6 +45,8 @@ gulp.task('build-scss', function() {
     tools.sass(
       {outputStyle: 'expanded'}
     ).on('error', tools.sass.logError)
+  ).pipe(
+    tools.autoprefixer({ browsers: ['last 2 versions']})
   ).pipe(
     gulp.dest(dist.assets + 'css/')
   );
