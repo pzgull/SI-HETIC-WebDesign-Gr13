@@ -22,4 +22,9 @@ $(document).ready(function() {
     })
   });
 
+  $('.buttonPieces').on('click', function(e) {
+    e.preventDefault();
+    $('.tileset').toggleSlide();
+  });
+
 });
