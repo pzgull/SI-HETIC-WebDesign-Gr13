@@ -40,7 +40,9 @@ gulp.task('build-scripts', function() {
 
 gulp.task('build-scss', function() {
   tools.cleanDir(dist.assets + 'css/');
-  return gulp.src('src/scss/*.scss')
+  gulp.src('src/scss/*.css')
+  .pipe(gulp.dest(dist.assets + 'css/'));
+  gulp.src('src/scss/*.scss')
   .pipe(
     tools.sass(
       {outputStyle: 'expanded'}
