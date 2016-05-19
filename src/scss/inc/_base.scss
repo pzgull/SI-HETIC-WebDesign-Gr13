@@ -29,6 +29,28 @@ $futura: 'Futura Medium', sans-serif;
 // BREAKPOINTS
 $bp-small: 768px;
 
+// KEYFRAMES
+@keyframes slidein {
+    from {
+        margin-left:-500px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+@keyframes slideout {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left:-500px;
+    }
+}
+
+
 // MIXINS
 @mixin tiles($width, $height) {
   .tile {

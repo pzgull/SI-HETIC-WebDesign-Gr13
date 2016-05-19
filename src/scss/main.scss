@@ -406,3 +406,216 @@ nav ul {
 .display a:hover {
   border-bottom: 2px solid $darkgray;
 }
+
+@media screen and (max-width: $bp-small) {
+  body{
+      letter-spacing: 3px;
+      font-family: "Futura";
+  }
+
+  header{
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+
+
+  .mobile{
+      width: 360px;
+      height: auto;
+  }
+
+  .burger {
+      margin-left: 55px;
+      z-index:101;
+      display: inline-block;
+      cursor: pointer;
+  }
+
+  header img {
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 35px;
+  }
+
+  .barreBurger{
+      width: 35px;
+      height: 5px;
+      background-color: #4c4c4d;
+      margin-bottom : 5px;
+      margin-right: 45px;
+  }
+
+  .menu {
+      position:fixed;
+      width: 280px;
+      height:100vh;
+      box-sizing: border-box;
+      background-color:white;
+      display:none;
+      margin-top:-40px;
+      animation: slideout 2s;
+  }
+
+  .menu.hidden{
+      display: block;
+      animation: slidein 2s;
+  }
+
+  .menu nav i{
+      float: right;
+      margin-right: 25px;
+      margin-top: -8px;
+      margin-bottom: 5px;
+  }
+
+  .menu nav{
+       margin-left: 30px;
+      margin-top: 30px;
+   }
+
+  .menu nav.connect{
+      margin-top: 120px;
+  }
+
+  .menu nav ul li{
+      margin-bottom: 25px;
+  }
+
+  .menu nav.connect ul li{
+      display: inline-block;
+  }
+
+  .menu nav ul li a{
+       text-decoration: none;
+       color : #4c4c4d;
+   }
+
+  .menu nav ul li a:hover{
+      color : #ff6600;
+      transition-duration: 1s;
+  }
+
+  .hidden{
+      display:none;
+  }
+
+  .active{
+      transition-duration: 1s;
+      -webkit-transform: rotateZ(45deg);
+      -moz-transform: rotateZ(45deg);
+      -ms-transform: rotateZ(45deg);
+      -o-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+  }
+
+  .active2{
+      margin-top: -10px;
+      -webkit-transform: rotateZ(-45deg);
+      -moz-transform: rotateZ(-45deg);
+      -ms-transform: rotateZ(-45deg);
+      -o-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
+      transition-duration: 1s;
+  }
+
+  .search{
+      clear: both;
+      height: 500px;
+      width: 100%;
+      background-color: #f6f6f6;
+      padding-top: 40px;
+      margin-bottom: 90px;
+  }
+
+  .searchBar{
+      margin: 0 auto;
+      display: block;
+      width: 260px;
+      height: 30px;
+      background-color: white;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 80px;
+  }
+
+  .carSearch{
+      text-align: center;
+      display: block;
+      font-size: 16px;
+      color: #4c4c4d;
+      text-transform: uppercase;
+  }
+
+  .searchByCategories{
+      font-size: 16px;
+      width: 300px;
+      height: 40px;
+      border: 3px solid #ff6600;
+      border-radius: 20px;
+      background-color: transparent;
+      margin: 0 auto;
+      display: block;
+      outline: none;
+      margin-bottom: 80px;
+      cursor: pointer;
+      transition-duration: 1s;
+  }
+
+  .searchByCategories:hover{
+      background-color: #ff6600;
+      color: white;
+      transition-duration: 1s;
+  }
+
+  .tiles{
+
+  }
+
+  .tilesHidden{
+      display: none;
+  }
+
+  .social{
+      width:100%;
+      height: 115px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f6f6f6;
+      margin-bottom : 25px;
+  }
+
+  .social a{
+      text-decoration: none;
+  }
+
+  .social ul li {
+      display: inline-block;
+      text-align: center;
+  }
+
+  .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .links ul li {
+      line-height: 30px;
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .links ul li a{
+      text-decoration: none;
+      color : #4c4c4d;
+      transition-duration: 1s;
+  }
+
+  .links ul li a:hover {
+      color : #ff6600;
+  }
+}
