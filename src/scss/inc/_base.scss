@@ -61,6 +61,7 @@ $bp-small: 768px;
       color: $lightergray;
       &:hover {
         background: darken($orange, 10%);
+        transition: 1s;
       }
     }
     &.lightergray {
@@ -68,6 +69,7 @@ $bp-small: 768px;
       color: $darkgray;
       &:hover {
         background: darken($lightergray, 10%);
+        transition: 1s;
       }
     }
     &.darkgray {
@@ -75,6 +77,7 @@ $bp-small: 768px;
       color: $lightergray;
       &:hover {
         background: darken($darkgray, 10%);
+        transition: 1s;
       }
     }
   }
