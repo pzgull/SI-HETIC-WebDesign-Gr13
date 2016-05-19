@@ -36,69 +36,28 @@ header img{
 }
 
 .menu {
-    position:fixed;
-    width: 280px;
-    height:100vh;
-    box-sizing: border-box;
-    background-color:white;
-    display:none;
-    margin-top:-40px;
-    animation: slideout 2s;
-}
-
-.menu.hidden{
+  position:fixed;
+  width: 280px;
+  height:100vh;
+  box-sizing: border-box;
+  background-color:white;
+  display:none;
+  margin-top:-40px;
+  animation: slideout 2s;
+  &.hidden{
     display: block;
     animation: slidein 2s;
-}
-
-.menu nav i{
-    float: right;
-    margin-right: 25px;
-    margin-top: -8px;
-    margin-bottom: 5px;
-}
-
-.menu nav{
-     margin-left: 30px;
-    margin-top: 30px;
- }
-
-.menu nav.connect{
-    margin-top: 120px;
-}
-
-.menu nav ul li{
-    margin-bottom: 25px;
-}
-
-.menu nav.connect ul li{
-    display: inline-block;
-}
-
-.menu nav ul li a{
-     text-decoration: none;
-     color : #4c4c4d;
- }
-
-.menu nav ul li a:hover{
-    color : #ff6600;
-    transition-duration: 1s;
-}
-
-.hidden{
-    display:none;
-}
-
-.active{
+  }
+  .active {
     transition-duration: 1s;
     -webkit-transform: rotateZ(45deg);
     -moz-transform: rotateZ(45deg);
     -ms-transform: rotateZ(45deg);
     -o-transform: rotateZ(45deg);
     transform: rotateZ(45deg);
-}
+  }
 
-.active2{
+  .active2{
     margin-top: -10px;
     -webkit-transform: rotateZ(-45deg);
     -moz-transform: rotateZ(-45deg);
@@ -106,7 +65,41 @@ header img{
     -o-transform: rotateZ(-45deg);
     transform: rotateZ(-45deg);
     transition-duration: 1s;
+  }
+
+  nav {
+    margin-left: 30px;
+    margin-top: 30px;
+    &.connect {
+      margin-top: 120px;
+      ul li {
+        display: inline-block;
+      }
+    }
+    i {
+      float: right;
+      margin-right: 25px;
+      margin-top: -8px;
+      margin-bottom: 5px;
+    }
+    ul li {
+      margin-bottom: 25px;
+      a {
+       text-decoration: none;
+       color : #4c4c4d;
+       &:hover{
+         color : #ff6600;
+         transition-duration: 1s;
+       }
+      }
+    }
+  }
 }
+
+.hidden {
+  display:none;
+}
+
 
 .search{
     clear: both;
