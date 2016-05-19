@@ -84,22 +84,40 @@ header a {
   margin-bottom: 130px;
 }
 
-.search-module ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.search-module li {
-  padding: 35px 0;
-  font: 16px $futura;
-}
-
-.search-module .display {
+.search-module {
   width: 940px;
   height: 430px;
   margin: 0 auto;
-  background: $lightgray;
+  background: $lightergray;
+  .display {
+    background: inherit;
+  }
+  form {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  nav {
+    background: $darkgray;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        text-align: center;
+        width: 33.333333%;
+        padding: 35px 0;
+        font: 16px $futura;
+        &:hover {
+          cursor: pointer;
+          background: $lightergray;
+        }
+        &.selected {
+          background: $lightergray;
+        }
+      }
+    }
+  }
 }
 
 //REASSURANCE
@@ -268,4 +286,3 @@ nav ul {
 .display a:hover {
   border-bottom: 2px solid $darkgray;
 }
-
