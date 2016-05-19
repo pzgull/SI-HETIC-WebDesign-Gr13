@@ -2,9 +2,10 @@ extends layout
 
 block content
 
+  section#slider
+    p Slider
+
   .innerBody
-    section#slider
-      p Slider
     section#piecesdetachees
 
       button(type="button") Pièce détachée
@@ -42,18 +43,32 @@ block content
             input(type="text" placeholder="Entrez votre type mine")
             input(type="submit" value="OK")
 
-    section#partenaires
+    section#reassurance
+      .satisfaction
+        strong 9,2/10
+        h2 Nos clients satisfaits
+      .center
+        strong 17 000 centres de montage
+      .piece
+        strong Pièces
+        h2 Neuves et d’origines
+      .payement
+        strong Paiement
+        h2 100% sécurisé
 
-      h1 Garages partenaires
+  section#partenaires
 
-      .wrapper
+    h1 Garages partenaires & magasins
 
-        .map
-          img(src="#")
+    .wrapper
 
-        .display-info
-          h3 partenaires
+      .map
+        img(src="./assets/img/map.png")
 
+      .display-info
+        h3 partenaires
+
+  .innerBody
     section#quotes
 
       blockquote «Site magnifique merci à toute l’équipe de ce site !»
@@ -61,19 +76,22 @@ block content
     section#grandesmarques
       h1
        | Les grandes marques
-       span.subtile Nous font confiance
+       br
+       span Nous font confiance
 
       .brand-carousel
-        .arrow-right
-
-      each brand in ['bosh', 'brembo', 'thule']
-        -var brandimg = "./assets/img/" + brand + ".png"
-        img(src=brandimg, alt=brand)
-
         .arrow-left
 
-      h2 Ils parlent de Nous
+        each brand in ['bosh', 'brembo', 'thule']
+          -var brandimg = "./assets/img/" + brand + ".png"
+          img(src=brandimg, alt=brand)
 
-    each brand in ['tf1', 'france2', 'rmc', 'm6', 'bfm', 'nrj12']
-      -var brandimg = "./assets/img/" + brand + ".png"
-      img(src=brandimg, alt=brand)
+        .arrow-right
+
+    section#media
+      h1 Ils parlent de nous
+
+    .medias
+      each brand in ['tf1', 'france2', 'rmc', 'm6', 'bfm', 'nrj12']
+        -var brandimg = "./assets/img/" + brand + ".png"
+        img(src=brandimg, alt=brand)
