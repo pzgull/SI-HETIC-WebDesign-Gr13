@@ -36,6 +36,7 @@ $futura: 'Futura Medium', sans-serif;
       color: $lightergray;
       &:hover {
         background: darken($orange, 10%);
+        transition: 1s;
       }
     }
     &.lightergray {
@@ -43,6 +44,7 @@ $futura: 'Futura Medium', sans-serif;
       color: $darkgray;
       &:hover {
         background: darken($lightergray, 10%);
+        transition: 1s;
       }
     }
     &.darkgray {
@@ -50,6 +52,7 @@ $futura: 'Futura Medium', sans-serif;
       color: $lightergray;
       &:hover {
         background: darken($darkgray, 10%);
+        transition: 1s;
       }
     }
   }

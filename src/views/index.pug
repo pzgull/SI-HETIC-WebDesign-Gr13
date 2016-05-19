@@ -3,7 +3,6 @@ extends layout
 block content
 
   section#slider
-    p Slider
 
   .innerBody
     section#piecesdetachees
@@ -13,7 +12,7 @@ block content
       .tileset
         // Could be .hidden
         each item in data.tiles
-          +tile(item.title, item.src, item.color, item.href)
+          +tile(item.title, item.src, item.color, item.href, item.links)
 
       // Button Arrow
       button.buttonUp
@@ -30,7 +29,147 @@ block content
             li#cartegrise Par carte grise
         .display
           form.form-modele.active
-            input(type="text" placeholder="Marque")
+            select
+              option(value='') Marques
+              optgroup(label='Les marques principales')
+                option(value='133') RENAULT
+                option(value='119') PEUGEOT
+                option(value='35') CITROEN
+                option(value='160') VOLKSWAGEN
+                option(value='23') BMW
+                option(value='58') FORD
+                option(value='56') FIAT
+                option(value='11') AUDI
+                option(value='97') MERCEDES
+                option(value='115') OPEL
+                option(value='139') SEAT
+              optgroup(label=' ')
+              optgroup(label='Toutes les marques')
+                option(value='3') ALFA-ROMEO
+                option(value='4') ALLIED VEHICLE
+                option(value='7') ARO
+                option(value='8') ASIA
+                option(value='10') ASTON MARTIN
+                option.principal_car(value='11') AUDI
+                option(value='170') AUSTIN MORRIS
+                option(value='12') AUTOBIANCHI
+                option(value='16') BAB-BUGGY
+                option(value='17') BEDFORD
+                option(value='19') BENTLEY
+                option(value='20') BERTONE
+                option(value='21') BINZ
+                option(value='194') BLMC
+                option.principal_car(value='23') BMW
+                option(value='25') BUGATTI
+                option(value='26') BUICK
+                option(value='27') CADILLAC
+                option(value='30') CATERHAM
+                option(value='182') CHEVROLET
+                option(value='31') CHEVROLET (USA)
+                option(value='32') CHEYENNE
+                option(value='33') CHRYSLER
+                option.principal_car(value='35') CITROEN
+                option(value='38') DACIA
+                option(value='39') DAEWOO
+                option(value='40') DAF
+                option(value='41') DAIHATSU
+                option(value='42') DAIMLER
+                option(value='195') DALLAS
+                option(value='169') DANGEL
+                option(value='44') DATSUN
+                option(value='105') DE-TOMASO
+                option(value='47') DE-TOMASO
+                option(value='188') DIJEAU CARROSSIER
+                option(value='171') DODGE
+                option(value='196') DONKERVOORT
+                option(value='50') DURISOTTI
+                option(value='51') EBRO
+                option(value='52') EBS
+                option(value='55') FERRARI
+                option.principal_car(value='56') FIAT
+                option.principal_car(value='58') FORD
+                option(value='192') FORD (USA)
+                option(value='60') FSO
+                option(value='61') GIANNINI
+                option(value='173') GMC
+                option(value='62') GME
+                option(value='903') GTF INNOVATIONS
+                option(value='189') HOLDEN
+                option(value='67') HOMMELL
+                option(value='68') HONDA
+                option(value='190') HUMMER
+                option(value='70') HYUNDAI
+                option(value='193') INFINITI
+                option(value='72') INNOCENTI
+                option(value='73') ISUZU
+                option(value='74') IVECO
+                option(value='75') JAGUAR
+                option(value='187') JEEP
+                option(value='77') KIA
+                option(value='800') KTM
+                option(value='79') LADA
+                option(value='81') LAMBORGHINI
+                option(value='82') LANCIA
+                option(value='85') LAND ROVER
+                option(value='910') LANDWIND
+                option(value='83') LDV
+                option(value='168') LEXUS
+                option(value='176') LINCOLN
+                option(value='84') LOTUS
+                option(value='88') MAHINDRA
+                option(value='90') MARTIN
+                option(value='89') MARUTI
+                option(value='91') MASERATI
+                option(value='92') MAYBACH
+                option(value='93') MAZDA
+                option(value='94') MC LAREN
+                option(value='96') MEGA
+                option.principal_car(value='97') MERCEDES
+                option(value='99') MERCURY
+                option(value='100') METROCAB
+                option(value='177') MG
+                option(value='164') MINI
+                option(value='101') MITSUBISHI
+                option(value='105') MORGAN
+                option(value='110') MVS
+                option(value='112') NISSAN
+                option(value='113') OLDSMOBILE
+                option.principal_car(value='115') OPEL
+                option(value='117') PAGANI
+                option.principal_car(value='119') PEUGEOT
+                option(value='120') PGO
+                option(value='121') PIAGGIO
+                option(value='122') POLSKI-FIAT
+                option(value='123') PONTIAC
+                option(value='124') PORSCHE
+                option(value='127') PROTON
+                option(value='132') RELIANT
+                option.principal_car(value='133') RENAULT
+                option(value='135') ROLLS-ROYCE
+                option(value='136') ROVER
+                option(value='137') SAAB
+                option(value='138') SAMSUNG
+                option(value='191') SCAM
+                option.principal_car(value='139') SEAT
+                option(value='900') SECMA
+                option(value='201') SHUANGHUAN
+                option(value='140') SKODA
+                option(value='95') SMART
+                option(value='203') SOMAC
+                option(value='144') SSANGYONG
+                option(value='145') SUBARU
+                option(value='147') SUZUKI-SANTANA
+                option(value='149') TALBOT SIMCA
+                option(value='150') TATA
+                option(value='199') THINK
+                option(value='153') TOYOTA
+                option(value='154') TRIUMPH
+                option(value='165') VAUXHALL
+                option.principal_car(value='160') VOLKSWAGEN
+                option(value='159') VOLVO
+                option(value='162') YUGO
+                option(value='198') ZAZ
+
             input(type="text" placeholder="Modèle")
             input(type="text" placeholder="Motorisation")
             input(type="submit" value="OK")
@@ -64,17 +203,26 @@ block content
         img(src="./assets/img/cb.png", alt="Carte bleue")
 
 
-  section#partenaires
+    section#partenaires
 
-    h1 Garages partenaires & magasins
+      h1 Garages partenaires & magasins
 
-    .wrapper
+  .wrapper
 
-      .map
-        img(src="./assets/img/map.png", alt="Carte de la France")
+    .map
+      img(src="./assets/img/map.png", alt="Carte de la France")
 
-      .display-info
-        h3 partenaires
+    .display-info
+      .display-wrap
+        h3 Paris
+        p Tél : 09 84 48 27 16 <br> 133 rue Amelot <br> 75011 Paris
+      ul
+        li
+          img(src="./assets/img/point.png", alt="Point noir légende")
+          | Garages Partenaires
+        li
+          img(src="./assets/img/point-bleu.png", alt="Point bleu légende")
+          | Nos Magasins
 
   .innerBody
     section#quotes
@@ -88,13 +236,13 @@ block content
        span Nous font confiance
 
       .brand-carousel
-        .arrow-left
+        img(src="./assets/img/left.png", alt="Flèche de gauche", class="arrow")
 
         each brand in ['bosh', 'brembo', 'thule']
           -var brandimg = "./assets/img/" + brand + ".png"
           img(src=brandimg, alt=brand)
 
-        .arrow-right
+        img(src="./assets/img/right.png", alt="Flèche de droite", class="arrow")
 
     section#media
       h1 Ils parlent de nous
