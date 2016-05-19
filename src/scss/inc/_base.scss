@@ -1,6 +1,7 @@
 // PATHS
 $imgpath:   '../img/';
 $fontpath:  '../fonts/';
+
 // COLORS
 $white:       #ffffff;
 $black:       #000000;
@@ -10,6 +11,7 @@ $darkgray:    #4c4c4d;
 $darkergray:  #2d2d2d;
 $orange:      #ff6600;
 $lightblue:   #219fbe;
+
 //TYPOGRAPHIES
 @font-face {
   font-family: 'Futura Medium';
@@ -21,6 +23,8 @@ $lightblue:   #219fbe;
   src: url($fontpath + "Avenir.ttc");
 }
 
+$avenir: Avenir, sans-serif;
+$futura: 'Futura Medium', sans-serif;
 
 // MIXINS
 @mixin tiles($width, $height) {
