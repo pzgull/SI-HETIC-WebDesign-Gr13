@@ -1,0 +1,23 @@
+.menu.small-only
+  nav.connect
+    ul
+      li
+        a(href='#') Mon Compte
+      i.flaticon-avatar
+      li
+        a(href='#') Se Déconnecter
+      i.flaticon-logout
+  nav
+    ul
+      each item in ['Accueil', 'La Boutique', 'Les Garages Partenaires', 'Les Magasins', 'Nous Contacter']
+        li
+          a(href='#') #{item}
+
+  footer
+    .social
+      ul
+        each media in ['facebook', 'google-plus', 'twitter', 'pinterest']
+          -var icon = 'flaticon-' + media
+          li
+            a(href='#')
+              i(class=icon)
