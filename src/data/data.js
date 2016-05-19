@@ -11,7 +11,8 @@ module.exports = {
     { title: "Son tel et alamarmes", icon: "", href: "#", subcat: [] },
     { title: "Carrosserie", icon: "", href: "#", subcat: [] },
     { title: "Outillage", icon: "", href: "#", subcat: [] },
-    { title: "Moto", icon: "", href: "#", subcat: [] }
+    { title: "Moto", icon: "", href: "#", subcat: [] },
+    { title: "Magasins", icon: "", href: "#", subcat: [] }
   ],
   tiles: [
     { title: "Freinage", src: path + "freinage.png", color: "orange", href: "#" },
