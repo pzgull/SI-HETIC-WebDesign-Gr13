@@ -33,73 +33,106 @@ h2, h4, h3 {
     /* span */
     .vert {
         color: #44bb24;
-        font-size: 22px;
     }
 
     .orange {
         color: #ff6600;
-        font-size: 27px;
+        font-size: 20px;
     }
 
     /* Display None */
-    #burgerresponsive, #produitimagemobile, #client, #footerresponsive, #reseauresponsive, #slide2 {  display: none;}
-    .note, .prix, .euros {  display: none;}
+    #burgerresponsive, #produitimagemobile, #client, .social, .links, #slide2, .note, .prix, .euros, .stockmob {  display: none;}
 
-    /* debut */
-    #produit {
-        background-image: url("../img/produitweb.png");
-        width: 232px;
-        height: 365px;
-    }
+
+    /* INFORMATIONS */
+
 
     #produitweb {
-        background-image: url("../img/produitweb.png");
-        width: 232px;
-        height: 365px;
-        margin-left: 5%;
         float: left;
+        margin-left: 170px;
+        margin-top: 30px;
     }
 
     #produitmobile {
         width: 800px;
         margin: 0 auto;
-        margin-top: 100px;
-        margin-bottom: 80px;
+        align-items: center;
+        justify-content: center;
     }
 
-    #produitmobile h2 {
-        font-size: 27px;
-        text-align: center;
-        font-family: "Futura";
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+
 
     .produitimagemobile, #informationmobile {
         display: inline-block;
     }
 
+    #informationmobile{
+        margin-left: 50px;
+        height: 350px;
+        vertical-align: top;
+    }
+
     #informationmobile li {
         margin-top: 10px;
         font-family: "Futura";
+        font-size: 16px;
         margin-left: 15%;
-        width: 350px;
+        width: 250px;
     }
 
     .note2 p{
-        float: left;
+
         margin-right: 8%;
         margin-top: 0;
     }
 
-    .shop {
-        background-image: url("../img/boutonweb.png") ;
-        width: 100px;
-        height: 53px;
-        margin-top: 130px;
-        margin-bottom: 50px;
+    .stockweb {
+        font-family: "Futura";
+        text-align: center;
+        margin-left: 10%;
     }
 
+    .shop {
+        background-image: url("../img/boutonweb.png") ;
+        width: 80px;
+        height: 42px;
+        margin-top: 40px;
+        margin-left: 80px;
+    }
+
+    /* FIN INFORMATIONS */
+
+
+    /*DEBUT ACCORDION*/
+
+    #accordion {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #accordion p {
+        width: 500px;
+        font-size: 14px;
+        margin-left: 9%;
+        text-align: center;
+        font-family: 'Avenir';
+    }
+
+    #accordion a{
+        text-decoration: none;
+        color:#ff6600;
+    }
+
+    #accordion h4{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /*FIN ACCORDION*/
+
+
+    /* block description*/
 
     .description {
         width: 200px;
@@ -120,34 +153,12 @@ h2, h4, h3 {
         margin-top: 5px;
     }
 
-    /*accordion*/
-
-    #accordion {
-        width: 600px;
-        margin: 0 auto;
-    }
-
-    #accordion p {
-        width: 500px;
+    .resume{
         font-size: 18px;
-        margin-left: 9%;
         text-align: center;
+        font-family: 'Avenir';
     }
 
-    #accordion a{
-        text-decoration: none;
-        color:#ff6600;
-    }
-
-    #accordion h4{
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    /*Fin accordion */
-
-
-    /* block description*/
     .utilisation, .performance, .conseil h4 {
         text-align: center;
         font-family: "Futura";
@@ -160,7 +171,7 @@ h2, h4, h3 {
 
     .utilisation, .performance, .conseil p {
         font-size: 20px;
-        font-family: "Karla-Regular";
+        font-family: 'Avenir';
         text-align: left;
     }
 
@@ -176,8 +187,10 @@ h2, h4, h3 {
         margin: 0 auto;
         width: 460px;
         text-align: center;
-        font-family: "Karla-Regular";
+        font-family: 'Avenir';
     }
+
+    /* Fin block description*/
 
     /*Debut Produits Simulaire */
 
@@ -188,10 +201,10 @@ h2, h4, h3 {
         font-family: "Futura";
         font-size: 30px;
         margin-bottom: 30px;
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
-    .simulairemobile:after{
+    .simulairemobile::after{
         content: "";
         width: 70px;
         height: 4px;
@@ -249,7 +262,7 @@ h2, h4, h3 {
 
     /* Display none */
 
-    #produitweb, .note2, .prix2, #slide {
+    #produitweb, .note2, .prix2, #slide, .stockweb {
         display: none;
     }
 
@@ -286,14 +299,10 @@ h2, h4, h3 {
         font-family: "Futura";
     }
 
-
-    /*burger*/
-
     header{
         margin-top: 40px;
         margin-bottom: 40px;
     }
-
 
     .mobile{
         width: 360px;
@@ -301,7 +310,6 @@ h2, h4, h3 {
     }
 
     .burger{
-        display: block;
         margin-left: 55px;
         z-index:101;
         display: inline-block;
@@ -311,7 +319,8 @@ h2, h4, h3 {
     header img{
         cursor: pointer;
         display: inline-block;
-        margin-right: 35px;
+        margin-right: 7%;
+        margin-left: 7%;
     }
 
     .barreBurger{
@@ -340,9 +349,10 @@ h2, h4, h3 {
 
     .menu nav i{
         float: right;
-        margin-right: 25px;
-        margin-top: -8px;
         margin-bottom: 5px;
+        display: inline-block;
+        margin-right: 25px;
+        margin-top: -13px;
     }
 
     .menu nav{
@@ -359,6 +369,7 @@ h2, h4, h3 {
     }
 
     .menu nav.connect ul li{
+        height: 50px;
         display: inline-block;
     }
 
@@ -545,36 +556,30 @@ h2, h4, h3 {
 
     #slide2 li {
         float: left;
+        margin-bottom: 30px;
     }
 
     /*Fin Produits Simulaire */
 
     /*Debut Reseau Sociaux*/
 
-    #reseauresponsive {
+    .social{
+        width:100%;
+        height: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #f6f6f6;
-        height: 110px;
-        margin-top: 140px;
-        padding-left: 30%;
+        margin-bottom : 25px;
     }
 
-    #reseauresponsive li{
-        float: left;
-        margin-right: 9%;
-        margin-top:40px ;
+    .social a{
+        text-decoration: none;
     }
-    
-    .facebook:hover { background-image: url("../img/facebookhover.png");}
 
-    .google:hover { background-image: url("../img/googleplushover.png");}
-
-    .twitter:hover { background-image: url("../img/twitterhover.png");}
-
-    .pinterest:hover {  background-image: url("../img/pinthover.png");  }
-
-    .facebook:hover, .google:hover, .twitter:hover, .pinterest:hover{
-        height: 29px;
-        width: 23px;
+    .social ul li {
+        display: inline-block;
+        text-align: center;
     }
 
 
@@ -582,21 +587,29 @@ h2, h4, h3 {
 
     /*Debut Footer*/
 
-    #footerresponsive{
-        font-family: 'Avenir';
-        font-size: 12px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    #footerresponsive li a {
-        text-decoration: none ;
-        color: black;
+    .links ul li {
+        line-height: 30px;
+        font-size: 14px;
+        text-align: center;
     }
 
-    #footerresponsive li a:hover {
-        color: #ff6600;
+    .links ul li a{
+        text-decoration: none;
+        color : #4c4c4d;
+        transition-duration: 1s;
+    }
+
+    .links ul li a:hover {
+        color : #ff6600;
     }
 
     /*fin Footer*/
 }
+
+
