@@ -1,6 +1,6 @@
 @import "inc/base";
 
-//HEADER
+/*HEADER*/
 header {
   background: $lightergray;
 
@@ -42,20 +42,20 @@ header {
   }
 }
 
-//BODY
+/*BODY*/
 .innerBody {
   width: 1280px;
   margin: 0 auto;
 }
 
-//SLIDER
+/*SLIDER*/
 #slider {
   background: $darkgray;
   height: 830px;
   text-align: center;
 }
 
-//TUILES
+/*TUILES*/
 #piecesdetachees button {
   margin: 100px 0 130px;
 }
@@ -108,7 +108,7 @@ header {
   }
 }
 
-//RECHERCHE PAR ONGLETS
+/*RECHERCHE PAR ONGLETS*/
 #recherche {
   margin-bottom: 220px;
 }
@@ -165,7 +165,7 @@ header {
   }
 }
 
-//REASSURANCE
+/*REASSURANCE*/
 #reassurance {
   display: flex;
   justify-content: center;
@@ -191,7 +191,7 @@ header {
   }
 }
 
-//GARAGES ET MAGASINS
+/*GARAGES ET MAGASINS*/
 #partenaires h1 {
   font: 30px $futura;
   color: $darkgray;
@@ -214,7 +214,7 @@ header {
   display: inline-block;
 }
 
-//CITATIONS
+/*CITATIONS*/
 #quotes {
   margin: 165px 0 170px;
 }
@@ -225,7 +225,7 @@ blockquote {
   text-align: center;
 }
 
-//GRANDES MARQUES
+/*GRANDES MARQUES*/
 #grandesmarques h1 {
   font: 30px $futura;
   color: $darkgray;
@@ -254,7 +254,7 @@ blockquote {
   margin: 0 25px;
 }
 
-//MEDIAS
+/*MEDIAS*/
 #media h1 {
   font: 30px $futura;
   color: $darkgray;
@@ -280,7 +280,7 @@ blockquote {
   height: 100%;
 }
 
-//FOOTER
+/*FOOTER*/
 footer {
   background: $lightgray;
   font: 12px $futura;
