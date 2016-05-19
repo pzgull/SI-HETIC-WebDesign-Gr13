@@ -1,6 +1,6 @@
 @import "inc/base";
 
-//HEADER
+/*HEADER*/
 header {
   background: $lightergray;
 
@@ -102,13 +102,13 @@ header {
   }
 }
 
-//BODY
+/*BODY*/
 .innerBody {
   width: 1280px;
   margin: 0 auto;
 }
 
-//SLIDER
+/*SLIDER*/
 #slider {
   background: $darkgray;
   height: 830px;
@@ -116,72 +116,81 @@ header {
 }
 
 //TUILES
+/*TUILES*/
 #piecesdetachees {
-  text-align: center;
-
-  button {
+  #piecesdetachees button {
     margin: 100px 0 130px;
   }
+
   .tileset {
     @include tiles(235px, 235px);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     text-align: center;
-    margin: 0 150px;
-  }
 
-  .tile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    button {
+      margin: 100px 0 130px;
+    }
+    .tileset {
+      @include tiles(235px, 235px);
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 0 150px;
+    }
 
-  .tile h4 {
-    font: 15px $avenir;
-    margin-top: 10px;
-  }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .arrowUp {
-    margin: 130px auto 190px;
-  }
+    .tile h4 {
+      font: 15px $avenir;
+      margin-top: 10px;
+    }
 
-  .buttonUp {
-    background: url($imgpath + "up.png") no-repeat;
-    border: 0;
-    width: 65px;
-    height: 40px;
-    outline: none;
-    cursor: pointer;
-  }
+    .arrowUp {
+      margin: 130px auto 190px;
+    }
 
-  .buttonPieces {
-    border: 6px solid $orange;
-    border-radius: 25px;
-    background: none;
-    cursor: pointer;
-    color: $darkgray;
-    font: 22px $futura;
-    letter-spacing: 3px;
-    outline: none;
-    padding: 5px 30px;
+    .buttonUp {
+      background: url($imgpath + "up.png") no-repeat;
+      border: 0;
+      width: 65px;
+      height: 40px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .buttonPieces {
+      border: 6px solid $orange;
+      border-radius: 25px;
+      background: none;
+      cursor: pointer;
+      color: $darkgray;
+      font: 22px $futura;
+      letter-spacing: 3px;
+      outline: none;
+      padding: 5px 30px;
+    }
   }
 }
 
-  //RECHERCHE PAR ONGLETS
-  #recherche {
-    margin-bottom: 220px;
-  }
-
-  #recherche h1 {
+/*RECHERCHE PAR ONGLETS*/
+#recherche {
+  margin-bottom: 220px;
+  h1 {
     text-align: center;
     font: 35px $futura;
     color: $darkgray;
     margin-bottom: 130px;
     text-transform: uppercase;
     &:after {
-      content:"";
+      content: "";
       display: block;
       border-bottom: 6px solid $orange;
       width: 130px;
@@ -189,7 +198,6 @@ header {
       margin-top: 5px;
     }
   }
-
   .search-module {
     width: 940px;
     height: 430px;
@@ -225,69 +233,74 @@ header {
       }
     }
   }
+}
 
-  //REASSURANCE
-  #reassurance {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 0 10px 140px;
-    text-align: center;
-    strong {
-      font: 28px $futura;
-      color: $darkgray;
-      letter-spacing: 2px;
-    }
-    h2 {
-      font: 16px $avenir;
-      color: $orange;
-    }
-    img {
-      margin: 25px;
-    }
-    .satisfaction, .center, .piece, .payement {
-      width: 220px;
-      height: 200px;
-      margin: 0 50px;
-    }
+//REASSURANCE
+#reassurance {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 10px 140px;
+  text-align: center;
+  strong {
+    font: 28px $futura;
+    color: $darkgray;
+    letter-spacing: 2px;
   }
+  h2 {
+    font: 16px $avenir;
+    color: $orange;
+  }
+  img {
+    margin: 25px;
+  }
+  .satisfaction, .center, .piece, .payement {
+    width: 220px;
+    height: 200px;
+    margin: 0 50px;
+  }
+}
 
-  //GARAGES ET MAGASINS
-  #partenaires h1 {
+/*GARAGES ET MAGASINS*/
+#partenaires {
+  h1 {
     font: 30px $futura;
     color: $darkgray;
     text-align: center;
     margin-bottom: 70px;
   }
-
-  #partenaires .wrapper {
+  .wrapper {
     background: $lightgray;
     padding: 25px 100px 25px 350px;
   }
 
-  #partenaires .map {
+  .map {
     display: inline-block;
     border: 6px solid $darkgray;
     padding: 25px;
   }
 
-  #partenaires .display-info {
+  .display-info {
     display: inline-block;
   }
+}
 
-  //CITATIONS
-  #quotes {
-    margin: 165px 0 170px;
-  }
+//CITATIONS
+/*CITATIONS*/
+#quotes {
+  margin: 165px 0 170px;
+}
 
-  blockquote {
-    font: 35px $futura;
-    color: $darkgray;
-    text-align: center;
-  }
+blockquote {
+  font: 35px $futura;
+  color: $darkgray;
+  text-align: center;
+}
 
-  //GRANDES MARQUES
-  #grandesmarques h1 {
+//GRANDES MARQUES
+/*GRANDES MARQUES*/
+#grandesmarques {
+  h1 {
     font: 30px $futura;
     color: $darkgray;
     text-align: center;
@@ -296,7 +309,7 @@ header {
     margin-bottom: 130px;
   }
 
-  #grandesmarques span {
+  span {
     font: 18px $avenir;
     color: $orange;
     text-transform: initial;
@@ -307,16 +320,19 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 130px;
-  }
 
-  .brand-carousel img {
-    width: 200px;
-    height: 100%;
-    margin: 0 25px;
+    .brand-carousel img {
+      width: 200px;
+      height: 100%;
+      margin: 0 25px;
+    }
   }
+}
 
-  //MEDIAS
-  #media h1 {
+//MEDIAS
+/*MEDIAS*/
+#media {
+  h1 {
     font: 30px $futura;
     color: $darkgray;
     text-transform: uppercase;
@@ -328,25 +344,26 @@ header {
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-  }
 
-  .medias img {
-    width: 80px;
-    height: 100%;
-    margin: 0 25px;
-  }
+    .medias img {
+      width: 80px;
+      height: 100%;
+      margin: 0 25px;
+    }
 
-  .medias img:nth-child(2){
-    width: 40px;
-    height: 100%;
+    .medias img:nth-child(2) {
+      width: 40px;
+      height: 100%;
+    }
   }
+}
 
-  //FOOTER
-  footer {
-    background: $lightgray;
-    font: 12px $futura;
-    color: $darkgray;
-  }
+//FOOTER
+/*FOOTER*/
+footer {
+  background: $lightgray;
+  font: 12px $futura;
+  color: $darkgray;
 
   .innerFooter {
     width: 1280px;
@@ -379,18 +396,18 @@ header {
     align-items: center;
     background: $white;
     padding: 50px;
-  }
 
-  .display li {
-    list-style-type: none;
-    line-height: 20px;
-  }
+    li {
+      list-style-type: none;
+      line-height: 20px;
+    }
 
-  .display a {
-    text-decoration: none;
-    color: $darkgray;
+    a {
+      text-decoration: none;
+      color: $darkgray;
+      &:hover {
+        border-bottom: 2px solid $darkgray;
+      }
+    }
   }
-
-  .display a:hover {
-    border-bottom: 2px solid $darkgray;
-  }
+}
