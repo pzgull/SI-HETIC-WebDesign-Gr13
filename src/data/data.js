@@ -11,20 +11,21 @@ module.exports = {
     { title: "Son tel et alamarmes", icon: "", href: "#", subcat: [] },
     { title: "Carrosserie", icon: "", href: "#", subcat: [] },
     { title: "Outillage", icon: "", href: "#", subcat: [] },
-    { title: "Moto", icon: "", href: "#", subcat: [] }
+    { title: "Moto", icon: "", href: "#", subcat: [] },
+    { title: "Magasins", icon: "", href: "#", subcat: [] }
   ],
   tiles: [
-    { title: "Freinage", src: path + "", color: "orange", href: "#" },
-    { title: "Filtre", src: path + "", color: "lightergray", href: "#" },
-    { title: "Direction", src: path + "", color: "darkgray", href: "#" },
-    { title: "Moteur", src: path + "", color: "orange", href: "#" },
-    { title: "Echappement", src: path + "", color: "darkgray", href: "#" },
-    { title: "Carroserie", src: path + "", color: "orange", href: "#" },
-    { title: "Embrayage", src: path + "", color: "lightergray", href: "#" },
-    { title: "Chauffage", src: path + "", color: "darkgray", href: "#" },
-    { title: "Visibilité", src: path + "", color: "orange", href: "#" },
-    { title: "Batterie", src: path + "", color: "lightergray", href: "#" },
-    { title: "Roue", src: path + "", color: "darkgray", href: "#" },
-    { title: "Habitacle", src: path + "", color: "lightergray", href: "#" }
+    { title: "Freinage", src: path + "freinage.png", color: "orange", href: "#" },
+    { title: "Filtre", src: path + "filtre.png", color: "lightergray", href: "#" },
+    { title: "Direction", src: path + "direction.png", color: "darkgray", href: "#" },
+    { title: "Moteur", src: path + "moteur.png", color: "orange", href: "#" },
+    { title: "Echappement", src: path + "echappement.png", color: "darkgray", href: "#" },
+    { title: "Carroserie", src: path + "carrosserie.png", color: "orange", href: "#" },
+    { title: "Embrayage", src: path + "embrayage.png", color: "lightergray", href: "#" },
+    { title: "Chauffage", src: path + "chauffage.png", color: "darkgray", href: "#" },
+    { title: "Visibilité", src: path + "visibilite.png", color: "orange", href: "#" },
+    { title: "Batterie", src: path + "batterie.png", color: "lightergray", href: "#" },
+    { title: "Roue", src: path + "roue.png", color: "darkgray", href: "#" },
+    { title: "Habitacle", src: path + "habitacle.png", color: "lightergray", href: "#" }
   ]
 };

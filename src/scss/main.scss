@@ -3,34 +3,43 @@
 //HEADER
 header {
   background: $lightergray;
-}
 
-.innerHeader {
-  width: 1280px;
-  margin: 0 auto;
-  padding: 55px 0;
-}
+  .innerHeader {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 55px 0;
+  }
 
-.top-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .top-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-header nav {
-  margin-top: 70px;
-  text-transform: uppercase;
-}
+  nav {
+    margin-top: 70px;
+    text-transform: uppercase;
+  }
 
-header ul {
-  display: flex;
-  justify-content: space-between;
-}
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
 
-header a {
-  text-decoration: none;
-  font: 14px $futura;
-  color: $black;
+  a {
+    text-decoration: none;
+    font: 14px $futura;
+    color: $black;
+  }
+
+  .buttonSearch {
+    background: url($imgpath + "loop.png") no-repeat;
+    border: 0;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    outline: none;
+  }
 }
 
 //BODY
@@ -60,8 +69,16 @@ header a {
   margin: 0 150px;
 }
 
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .tile h4 {
   font: 15px $avenir;
+  margin-top: 10px;
 }
 
 .arrowUp {
@@ -70,6 +87,25 @@ header a {
 
 #piecesdetachees {
   text-align: center;
+  .buttonPieces {
+    border: 6px solid $orange;
+    border-radius: 25px;
+    background: none;
+    cursor: pointer;
+    color: $darkgray;
+    font: 22px $futura;
+    letter-spacing: 3px;
+    outline: none;
+    padding: 5px 30px;
+  }
+  .buttonUp {
+    background: url($imgpath + "up.png") no-repeat;
+    border: 0;
+    width: 65px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 //RECHERCHE PAR ONGLETS
@@ -82,6 +118,15 @@ header a {
   font: 35px $futura;
   color: $darkgray;
   margin-bottom: 130px;
+  text-transform: uppercase;
+  &:after {
+    content:"";
+    display: block;
+    border-bottom: 6px solid $orange;
+    width: 130px;
+    margin-left: 670px;
+    margin-top: 5px;
+  }
 }
 
 .search-module {
@@ -125,23 +170,25 @@ header a {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin: 0 300px 140px;
+  margin: 0 10px 140px;
   text-align: center;
-}
-
-#reassurance strong {
-  font: 28px $futura;
-  color: $darkgray;
-}
-
-#reassurance h2 {
-  font: 16px $avenir;
-  color: $orange;
-}
-
-.satisfaction, .center, .piece, .payement {
-  width: 220px;
-  height: 200px;
+  strong {
+    font: 28px $futura;
+    color: $darkgray;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font: 16px $avenir;
+    color: $orange;
+  }
+  img {
+    margin: 25px;
+  }
+  .satisfaction, .center, .piece, .payement {
+    width: 220px;
+    height: 200px;
+    margin: 0 50px;
+  }
 }
 
 //GARAGES ET MAGASINS

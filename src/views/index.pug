@@ -8,7 +8,7 @@ block content
   .innerBody
     section#piecesdetachees
 
-      button(type="button") Pièce détachée
+      button.buttonPieces(type="button") Pièces détachées
 
       .tileset
         // Could be .hidden
@@ -16,7 +16,7 @@ block content
           +tile(item.title, item.src, item.color, item.href)
 
       // Button Arrow
-      button.arrowUp
+      button.buttonUp
 
     section#recherche
 
@@ -47,14 +47,22 @@ block content
       .satisfaction
         strong 9,2/10
         h2 Nos clients satisfaits
+        img(src="./assets/img/client.png", alt="Clients satisfaits")
+
       .center
         strong 17 000 centres de montage
+        img(src="./assets/img/garages.png", alt="Centres de montage")
+
       .piece
         strong Pièces
         h2 Neuves et d’origines
+        img(src="./assets/img/pieces.png", alt="Pièces")
+
       .payement
         strong Paiement
         h2 100% sécurisé
+        img(src="./assets/img/cb.png", alt="Carte bleue")
+
 
   section#partenaires
 
@@ -63,7 +71,7 @@ block content
     .wrapper
 
       .map
-        img(src="./assets/img/map.png")
+        img(src="./assets/img/map.png", alt="Carte de la France")
 
       .display-info
         h3 partenaires
