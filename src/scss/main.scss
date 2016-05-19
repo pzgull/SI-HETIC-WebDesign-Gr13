@@ -149,11 +149,15 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.tile h4 {
-  font: 15px $avenir;
-  margin-top: 10px;
+  
+  h4 {
+    font: 15px $avenir;
+    margin-top: 10px;
+  }
+  
+  .subtile {
+    display: none;
+  }
 }
 
 .arrowUp {
@@ -215,8 +219,10 @@ header {
 .search-module {
   margin: 0 auto;
   background: $lightergray;
+
   .display {
     background: inherit;
+
     select {
       display: inline-block;
       width: 245px;
@@ -226,6 +232,17 @@ header {
       margin: 0 3px;
       outline: none;
     }
+
+    input[type="text"] {
+      display: inline-block;
+      width: 245px;
+      height: 45px;
+      border: 0;
+      padding-left: 10px;
+      margin: 0 3px;
+      outline: none;
+    }
+
     input[type="submit"] {
       display: block;
       margin: 50px auto 0;
