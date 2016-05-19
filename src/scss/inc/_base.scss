@@ -26,6 +26,9 @@ $lightblue:   #219fbe;
 $avenir: Avenir, sans-serif;
 $futura: 'Futura Medium', sans-serif;
 
+// BREAKPOINTS
+$bp-small: 768px;
+
 // MIXINS
 @mixin tiles($width, $height) {
   .tile {

@@ -1,5 +1,12 @@
 @import "inc/base";
 
+.small-only {
+  display: none;
+  @media screen and (max-width: $bp-small) {
+    display: block;
+  }
+}
+
 /*HEADER*/
 header {
   background: $lightergray;
