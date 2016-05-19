@@ -47,4 +47,11 @@ $(document).ready(function() {
     $(this).hide();
   });
 
+  $(".burger").click(function(){
+    $(".menu").toggleClass("hidden");
+    $("#1").toggleClass("active");
+    $("#2").toggleClass("active2");
+    $("#3").toggleClass("hidden");
+  });
+
 });
