@@ -29,7 +29,7 @@ header ul {
 
 header a {
   text-decoration: none;
-  font: 14px 'Futura Medium';
+  font: 14px $futura;
   color: $black;
 }
 
@@ -61,7 +61,7 @@ header a {
 }
 
 .tile h4 {
-  font: 15px Avenir;
+  font: 15px $avenir;
 }
 
 .arrowUp {
@@ -73,9 +73,13 @@ header a {
 }
 
 //RECHERCHE PAR ONGLETS
+#recherche {
+  margin-bottom: 220px;
+}
+
 #recherche h1 {
   text-align: center;
-  font: 35px 'Futura Medium';
+  font: 35px $futura;
   color: $darkgray;
   margin-bottom: 130px;
 }
@@ -88,7 +92,7 @@ header a {
 
 .search-module li {
   padding: 35px 0;
-  font: 16px 'Futura Medium';
+  font: 16px $futura;
 }
 
 .search-module .display {
@@ -97,3 +101,171 @@ header a {
   margin: 0 auto;
   background: $lightgray;
 }
+
+//REASSURANCE
+#reassurance {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0 300px 140px;
+  text-align: center;
+}
+
+#reassurance strong {
+  font: 28px $futura;
+  color: $darkgray;
+}
+
+#reassurance h2 {
+  font: 16px $avenir;
+  color: $orange;
+}
+
+.satisfaction, .center, .piece, .payement {
+  width: 220px;
+  height: 200px;
+}
+
+//GARAGES ET MAGASINS
+#partenaires h1 {
+  font: 30px $futura;
+  color: $darkgray;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+#partenaires .wrapper {
+  background: $lightgray;
+  padding: 25px 100px 25px 350px;
+}
+
+#partenaires .map {
+  display: inline-block;
+  border: 6px solid $darkgray;
+  padding: 25px;
+}
+
+#partenaires .display-info {
+  display: inline-block;
+}
+
+//CITATIONS
+#quotes {
+  margin: 165px 0 170px;
+}
+
+blockquote {
+  font: 35px $futura;
+  color: $darkgray;
+  text-align: center;
+}
+
+//GRANDES MARQUES
+#grandesmarques h1 {
+  font: 30px $futura;
+  color: $darkgray;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
+  margin-bottom: 130px;
+}
+
+#grandesmarques span {
+  font: 18px $avenir;
+  color: $orange;
+  text-transform: initial;
+}
+
+.brand-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+.brand-carousel img {
+  width: 200px;
+  height: 100%;
+  margin: 0 25px;
+}
+
+//MEDIAS
+#media h1 {
+  font: 30px $futura;
+  color: $darkgray;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.medias img {
+  width: 80px;
+  height: 100%;
+  margin: 0 25px;
+}
+
+.medias img:nth-child(2){
+  width: 40px;
+  height: 100%;
+}
+
+//FOOTER
+footer {
+  background: $lightgray;
+  font: 12px $futura;
+  color: $darkgray;
+}
+
+.innerFooter {
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.newsletter span {
+  display: block;
+  font: 10px $avenir;
+  color: $orange;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 65px 100px 35px;
+  font-weight: bold;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $white;
+  padding: 50px;
+}
+
+.display li {
+  list-style-type: none;
+  line-height: 20px;
+}
+
+.display a {
+  text-decoration: none;
+  color: $darkgray;
+}
+
+.display a:hover {
+  border-bottom: 2px solid $darkgray;
+}
+
