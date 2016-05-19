@@ -28,9 +28,17 @@ $(document).ready(function() {
   });
 
   $('.buttonPieces').on('click', function(e) {
-    e.preventDefault();
-    $('.tileset').slideDown();
-    $btnUp.show();
+    $('.tileset').slideToggle();
+    $(this).toggleClass('deployed');
+    $btnUp.trigger('toggled');
+  });
+
+  $btnUp.on('toggled', function() {
+    if ($('.buttonPieces').hasClass('deployed')) {
+      $(this).show();
+    } else {
+      $(this).hide();
+    }
   });
 
   $btnUp.on('click', function(e) {
