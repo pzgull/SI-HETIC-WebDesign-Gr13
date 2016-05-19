@@ -1,12 +1,4 @@
 .menu.small-only
-
-  .burger
-    .barreBurger(id="1")
-    .barreBurger(id="2")
-    .barreBurger(id="3")
-    img.logo(src='./assets/img/logoMobile.png', alt='')
-    img(src='./assets/img/cart.png', alt='')
-
   nav.connect
     ul
       li
@@ -17,15 +9,28 @@
       i.flaticon-logout
   nav
     ul
-      each item in ['Accueil', 'La Boutique', 'Les Garages Partenaires', 'Les Magasins', 'Nous Contacter']
-        li
-          a(href='#') #{item}
-
+      li
+        a(href='#') Accueil
+      li
+        a(href='#') A Boutique
+      li
+        a(href='#') Les Garages Partenaires
+      li
+        a(href='#') Les Magasins
+      li
+        a(href='#') Nous Contacter
   footer
     .social
       ul
-        each media in ['facebook', 'google-plus', 'twitter', 'pinterest']
-          -var icon = 'flaticon-' + media
-          li
-            a(href='#')
-              i(class=icon)
+        li
+          a(href='#')
+            i.flaticon-facebook
+        li
+          a(href='#')
+            i.flaticon-google-plus
+        li
+          a(href='#')
+            i.flaticon-twitter
+        li
+          a(href='#')
+            i.flaticon-pinterest
