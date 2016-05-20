@@ -135,7 +135,7 @@ header {
 
 /*BODY*/
 .innerBody {
-  width: 100%;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -152,7 +152,10 @@ header {
 }
 
 .tileset {
-  @include tiles(50%, 220px);
+  @include tiles(235px, 235px);
+  @media screen and (max-width: $bp-small){
+    @include tiles(50%, 220px);
+  }
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -246,6 +249,13 @@ header {
       padding-left: 10px;
       margin: 0 3px;
       outline: none;
+      background: $white;
+
+      @media screen and (max-width: $bp-small) {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+      }
     }
 
     input[type="text"] {
@@ -447,7 +457,7 @@ blockquote {
     &.arrow {
       width: 30px;
       cursor: pointer;
-      &:hover{
+      &:active {
         width: 31px;
       }
     }
@@ -500,16 +510,56 @@ footer {
   padding-top: 50px;
 }
 
-.newsletter span {
-  display: block;
-  font: 10px $avenir;
-  color: $orange;
-}
-
 .top-footer {
   display: flex;
   justify-content: space-between;
   margin: 0 100px;
+
+  .newsletter {
+
+    p {
+      display: block;
+      font: 10px $avenir;
+      color: $orange;
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      border: 0;
+      outline: none;
+      padding: 10px;
+    }
+
+    button {
+      border: 0;
+      background: 0;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    nav {
+      ul {
+        li:hover {
+          background: $white;
+        }
+      }
+    }
+  }
+
+  .communaute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      display: flex;
+      margin-top: 20px;
+    }
+  }
 }
 
 .display {
@@ -531,5 +581,6 @@ footer {
 }
 
 .display a:hover {
-  border-bottom: 2px solid $darkgray;
+  color: $orange;
+  transition: 1s;
 }
