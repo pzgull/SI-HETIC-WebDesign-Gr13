@@ -5,25 +5,38 @@ $(document).ready(function() {
 
   var $btnUp = $('#piecesdetachees').find('.buttonUp');
 
+  var $searchModules = [
+    $('.normal').find('.search-module'),
+    $('.mobile').find('.search-module')
+  ];
+
   $('.tileset').hide();
   $btnUp.hide();
 
   tabitems.forEach(function(category) {
-    $('#' + category).on('click', function() {
-      $('.search-module').trigger('clear');
-      $(this).addClass('selected');
-      $('.form-' + category).addClass('actived');
+    $searchModules.forEach(function($searchModule) {
+      $searchModule.find('#' + category)
+          .on('click', function () {
+            $searchModule.trigger('clear');
+            $(this).addClass('selected');
+            $searchModule.find('.form-' + category)
+                .addClass('actived');
+          });
     });
   });
 
-  $('.search-module').on('clear', function() {
-    $(this).find('ul')
-    .children('li').each(function() {
-      $(this).removeClass('selected');
-    });
-    $(this).find('.display')
-    .children('form').each(function(elt) {
-      $(this).removeClass('actived');
+  console.log('search-module', $('.search-module'));
+
+  $searchModules.forEach(function($searchModule) {
+    $searchModule.on('clear', function() {
+      $(this).find('ul')
+          .children('li').each(function() {
+        $(this).removeClass('selected');
+      });
+      $(this).find('.display')
+          .children('form').each(function() {
+        $(this).removeClass('actived');
+      });
     });
   });
 
@@ -47,6 +60,7 @@ $(document).ready(function() {
     $(this).hide();
   });
 
+  // Burger menu
   $(".burger").click(function(){
     $(".menu").toggleClass("hidden");
     $("#1").toggleClass("active");
