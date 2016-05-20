@@ -25,11 +25,57 @@ footer
             | #{item}
             i(class="arrow-down")
 
-  .display
+  .display-footer
+    ul
+      each item in ['Livraison / Retour', 'Pont Relais', 'Paiement', 'Suivi de commande', 'Satisfait ou remboursé', 'Mentions légales', 'Conditions générales de vente', 'Conditions de livraison']
+        li
+          a(href="#") #{item}
 
-    each item in ['Livraison / Retour', 'Pont Relais', 'Paiement', 'Suivi de commande', 'Satisfait ou remboursé', 'Mentions légales', 'Conditions générales de vente', 'Conditions de livraison']
+    ul.liste-footer
+       li
+         a(href='/event/list') Atelier mécanique gratuit
+       li
+         a(rel='nofollow', href='/mail/contactForm') Questions / réponses
+       li
+         a(rel='nofollow', href='/infos/suivi-commande.html') Créer un compte
+       li
+         a(rel='nofollow', href='/infos/suivi-commande.html') Mon compte
+       li
+         a(rel='nofollow', href='/parrainage') Parrainez vos amis
+       li
+         a(rel='nofollow', href='/infos/cgv.html#Art_7') Sécurité et confidentialité
+       li
+         a(target='_blank', href='http://www.largus.fr/') Connaître sa cote Argus
+       li
+         a(rel='nofollow', href='http://dicodelauto.yakarouler.com') Blog du Dico de l'auto
+       li
+         a(target='_blank', href='http://forum.yakarouler.com') Forum Yakarouler
+       li
+         a(href='/diagnostic') Diagnostic panne
+       li
+         a(href='/tuto/guide-yakarouler') Tutoriels
+
+    ul.liste-footer
       li
-        a(href="#") #{item}
+        a(rel='nofollow', href='/infos/qui-sommes-nous.html') A propos de yakarouler
+      li
+        a(rel='nofollow', href='/mail/contactForm') Nous contacter
+      li
+        a(href='/recrutement') Yakarouler recrute
+      li
+        a(rel='nofollow', href='/infos/magasin.html') Magasin
+      li
+        a(rel='nofollow', href='/garage/infos') Devenez centre de montage
+      li
+        a(rel='nofollow', href='/infos/yakarouler-soutient-des-associations.html') Solidarité
+      li
+        a(rel='nofollow', href='/avis-clients.html') Avis client
+      li
+        a.ex4Trigger(rel='nofollow', href='/static/feedback') Donnez votre avis sur yakarouler
+      li
+        a(rel='nofollow', href='/static/devenezAffilie') Devenez affilié
+      li
+        a(rel='nofollow', href='/mobile/switch/type/mobile') Version Mobile
 
   .links.small-only
     ul
