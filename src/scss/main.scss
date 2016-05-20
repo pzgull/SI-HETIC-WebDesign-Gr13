@@ -1,11 +1,26 @@
 @import "inc/base";
+@import "inc/mobile";
+
+.normal {
+  display: none;
+  @media screen and (min-width: $bp-small) {
+    display: block;
+  }
+}
+
+.small-only {
+  display: none;
+  @media screen and (max-width: $bp-small) {
+    display: block;
+  }
+}
 
 /*HEADER*/
 header {
   background: $lightergray;
 
   .innerHeader {
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0 40px;
   }
@@ -26,7 +41,7 @@ header {
       height: 45px;
       border: 0;
       padding-left: 10px;
-      margin-right: 50px;
+      margin-right: 4%;
       outline: none;
     }
 
@@ -46,7 +61,7 @@ header {
       font: 12px $futura;
       color: $darkergray;
       letter-spacing: 2px;
-      width: 140px;
+      width: 15%;
       height : 40px;
       cursor: pointer;
       outline: none;
@@ -65,7 +80,7 @@ header {
       font: 12px $futura;
       color: $darkergray;
       letter-spacing: 2px;
-      width: 140px;
+      width: 15%;
       height : 40px;
       cursor: pointer;
       outline: none;
@@ -109,6 +124,7 @@ header {
 
   .buttonSearch {
     background: url($imgpath + "loop.png") no-repeat;
+    background-size: contain;
     border: 0;
     width: 34px;
     height: 34px;
@@ -119,7 +135,7 @@ header {
 
 /*BODY*/
 .innerBody {
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -136,12 +152,11 @@ header {
 }
 
 .tileset {
-  @include tiles(235px, 235px);
+  @include tiles(50%, 220px);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
-  margin: 0 150px;
 }
 
 .tile {
@@ -149,12 +164,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   h4 {
     font: 15px $avenir;
     margin-top: 10px;
   }
-  
+
   .subtile {
     display: none;
   }
@@ -211,7 +226,7 @@ header {
     display: block;
     border-bottom: 6px solid $orange;
     width: 130px;
-    margin-left: 670px;
+    margin-left: 50%;
     margin-top: 5px;
   }
 }
@@ -225,7 +240,7 @@ header {
 
     select {
       display: inline-block;
-      width: 245px;
+      width: 32%;
       height: 45px;
       border: 0;
       padding-left: 10px;
@@ -263,7 +278,7 @@ header {
   }
   form {
     display: none;
-    &.active {
+    &.actived {
       display: block;
     }
   }
@@ -332,7 +347,7 @@ header {
     display: block;
     border-bottom: 6px solid #ff6600;
     width: 130px;
-    margin-left: 860px;
+    margin-left: 50%;
     margin-top: 5px;
   }
 }
@@ -340,7 +355,8 @@ header {
 .wrapper {
   display: flex;
   background: $lightgray;
-  padding: 25px 100px 25px 350px;
+  justify-content: center;
+  padding: 25px;
   .map {
     display: inline-flex;
     border: 6px solid $darkgray;
@@ -479,7 +495,7 @@ footer {
 }
 
 .innerFooter {
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 50px;
 }

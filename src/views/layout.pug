@@ -7,16 +7,19 @@ html(lang="fr")
     title #{data.site.title}
 
     link(rel="stylesheet", href="./assets/css/reset.css")
-    //link(rel="stylesheet", href="./assets/css/bootstrap.css")
+    link(rel="stylesheet", href="./assets/css/flaticon.css")
     link(rel="stylesheet", href="./assets/css/main.css")
 
   body
     include ./_mixins.pug
-    include ./header.pug
+    section.normal
+      include ./header.pug
 
-    block content
+      block content
 
-    include ./footer.pug
+      include ./footer.pug
+
+    include ./sm-menu.pug
 
     script(src="./scripts/jquery.min.js")
     script(src="./scripts/main.js")
