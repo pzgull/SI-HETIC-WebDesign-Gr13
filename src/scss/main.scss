@@ -1,11 +1,26 @@
 @import "inc/base";
+@import "inc/mobile";
+
+.normal {
+  display: none;
+  @media screen and (min-width: $bp-small) {
+    display: block;
+  }
+}
+
+.small-only {
+  display: none;
+  @media screen and (max-width: $bp-small) {
+    display: block;
+  }
+}
 
 /*HEADER*/
 header {
   background: $lightergray;
 
   .innerHeader {
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px 0 40px;
   }
@@ -26,7 +41,7 @@ header {
       height: 45px;
       border: 0;
       padding-left: 10px;
-      margin-right: 50px;
+      margin-right: 4%;
       outline: none;
     }
 
@@ -46,7 +61,7 @@ header {
       font: 12px $futura;
       color: $darkergray;
       letter-spacing: 2px;
-      width: 140px;
+      width: 15%;
       height : 40px;
       cursor: pointer;
       outline: none;
@@ -65,7 +80,7 @@ header {
       font: 12px $futura;
       color: $darkergray;
       letter-spacing: 2px;
-      width: 140px;
+      width: 15%;
       height : 40px;
       cursor: pointer;
       outline: none;
@@ -109,6 +124,7 @@ header {
 
   .buttonSearch {
     background: url($imgpath + "loop.png") no-repeat;
+    background-size: contain;
     border: 0;
     width: 34px;
     height: 34px;
@@ -119,7 +135,7 @@ header {
 
 /*BODY*/
 .innerBody {
-  width: 1280px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -137,11 +153,13 @@ header {
 
 .tileset {
   @include tiles(235px, 235px);
+  @media screen and (max-width: $bp-small){
+    @include tiles(50%, 220px);
+  }
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
-  margin: 0 150px;
 }
 
 .tile {
@@ -149,12 +167,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   h4 {
     font: 15px $avenir;
     margin-top: 10px;
   }
-  
+
   .subtile {
     display: none;
   }
@@ -211,7 +229,7 @@ header {
     display: block;
     border-bottom: 6px solid $orange;
     width: 130px;
-    margin-left: 670px;
+    margin-left: 50%;
     margin-top: 5px;
   }
 }
@@ -225,12 +243,19 @@ header {
 
     select {
       display: inline-block;
-      width: 245px;
+      width: 32%;
       height: 45px;
       border: 0;
       padding-left: 10px;
       margin: 0 3px;
       outline: none;
+      background: $white;
+
+      @media screen and (max-width: $bp-small) {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+      }
     }
 
     input[type="text"] {
@@ -263,7 +288,7 @@ header {
   }
   form {
     display: none;
-    &.active {
+    &.actived {
       display: block;
     }
   }
@@ -332,7 +357,7 @@ header {
     display: block;
     border-bottom: 6px solid #ff6600;
     width: 130px;
-    margin-left: 860px;
+    margin-left: 50%;
     margin-top: 5px;
   }
 }
@@ -340,7 +365,8 @@ header {
 .wrapper {
   display: flex;
   background: $lightgray;
-  padding: 25px 100px 25px 350px;
+  justify-content: center;
+  padding: 25px;
   .map {
     display: inline-flex;
     border: 6px solid $darkgray;
@@ -431,7 +457,7 @@ blockquote {
     &.arrow {
       width: 30px;
       cursor: pointer;
-      &:hover{
+      &:active {
         width: 31px;
       }
     }
@@ -479,21 +505,61 @@ footer {
 }
 
 .innerFooter {
-  width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 50px;
-}
-
-.newsletter span {
-  display: block;
-  font: 10px $avenir;
-  color: $orange;
 }
 
 .top-footer {
   display: flex;
   justify-content: space-between;
   margin: 0 100px;
+
+  .newsletter {
+
+    p {
+      display: block;
+      font: 10px $avenir;
+      color: $orange;
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      border: 0;
+      outline: none;
+      padding: 10px;
+    }
+
+    button {
+      border: 0;
+      background: 0;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    nav {
+      ul {
+        li:hover {
+          background: $white;
+        }
+      }
+    }
+  }
+
+  .communaute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      display: flex;
+      margin-top: 20px;
+    }
+  }
 }
 
 .display {
@@ -515,5 +581,6 @@ footer {
 }
 
 .display a:hover {
-  border-bottom: 2px solid $darkgray;
+  color: $orange;
+  transition: 1s;
 }

@@ -1,0 +1,512 @@
+section.mobile.small-only
+      .menu
+        nav.connect
+          ul
+            li
+              a(href='#') Mon Compte
+            i.flaticon-avatar
+            li
+              a(href='#') Se Déconnecter
+            i.flaticon-logout
+        nav
+          ul
+            li
+              a(href='#') Accueil
+            li
+              a(href='#') A Boutique
+            li
+              a(href='#') Les Garages Partenaires
+            li
+              a(href='#') Les Magasins
+            li
+              a(href='#') Nous Contacter
+        footer
+          .social
+            ul
+              li
+                a(href='#')
+                  i.flaticon-facebook
+              li
+                a(href='#')
+                  i.flaticon-google-plus
+              li
+                a(href='#')
+                  i.flaticon-twitter
+              li
+                a(href='#')
+                  i.flaticon-pinterest
+      header
+        .burger
+          #1.barreBurger
+          #2.barreBurger
+          #3.barreBurger
+        img.logo(src='./assets/img/logoMobile.png', alt='#')
+        img(src='./assets/img/cart.png', alt='#')
+      section.search
+        .search-module
+          nav
+            ul
+              li#modele.selected Modèle
+              li#immat Immatriculation
+              li#cartegrise Carte Grise
+          .display
+            form.form-modele.actived
+              select
+                option(value='') Marques
+                optgroup(label='Les marques principales')
+                  option(value='133') RENAULT
+                  option(value='119') PEUGEOT
+                  option(value='35') CITROEN
+                  option(value='160') VOLKSWAGEN
+                  option(value='23') BMW
+                  option(value='58') FORD
+                  option(value='56') FIAT
+                  option(value='11') AUDI
+                  option(value='97') MERCEDES
+                  option(value='115') OPEL
+                  option(value='139') SEAT
+                optgroup(label=' ')
+                optgroup(label='Toutes les marques')
+                  option(value='3') ALFA-ROMEO
+                  option(value='4') ALLIED VEHICLE
+                  option(value='7') ARO
+                  option(value='8') ASIA
+                  option(value='10') ASTON MARTIN
+                  option.principal_car(value='11') AUDI
+                  option(value='170') AUSTIN MORRIS
+                  option(value='12') AUTOBIANCHI
+                  option(value='16') BAB-BUGGY
+                  option(value='17') BEDFORD
+                  option(value='19') BENTLEY
+                  option(value='20') BERTONE
+                  option(value='21') BINZ
+                  option(value='194') BLMC
+                  option.principal_car(value='23') BMW
+                  option(value='25') BUGATTI
+                  option(value='26') BUICK
+                  option(value='27') CADILLAC
+                  option(value='30') CATERHAM
+                  option(value='182') CHEVROLET
+                  option(value='31') CHEVROLET (USA)
+                  option(value='32') CHEYENNE
+                  option(value='33') CHRYSLER
+                  option.principal_car(value='35') CITROEN
+                  option(value='38') DACIA
+                  option(value='39') DAEWOO
+                  option(value='40') DAF
+                  option(value='41') DAIHATSU
+                  option(value='42') DAIMLER
+                  option(value='195') DALLAS
+                  option(value='169') DANGEL
+                  option(value='44') DATSUN
+                  option(value='105') DE-TOMASO
+                  option(value='47') DE-TOMASO
+                  option(value='188') DIJEAU CARROSSIER
+                  option(value='171') DODGE
+                  option(value='196') DONKERVOORT
+                  option(value='50') DURISOTTI
+                  option(value='51') EBRO
+                  option(value='52') EBS
+                  option(value='55') FERRARI
+                  option.principal_car(value='56') FIAT
+                  option.principal_car(value='58') FORD
+                  option(value='192') FORD (USA)
+                  option(value='60') FSO
+                  option(value='61') GIANNINI
+                  option(value='173') GMC
+                  option(value='62') GME
+                  option(value='903') GTF INNOVATIONS
+                  option(value='189') HOLDEN
+                  option(value='67') HOMMELL
+                  option(value='68') HONDA
+                  option(value='190') HUMMER
+                  option(value='70') HYUNDAI
+                  option(value='193') INFINITI
+                  option(value='72') INNOCENTI
+                  option(value='73') ISUZU
+                  option(value='74') IVECO
+                  option(value='75') JAGUAR
+                  option(value='187') JEEP
+                  option(value='77') KIA
+                  option(value='800') KTM
+                  option(value='79') LADA
+                  option(value='81') LAMBORGHINI
+                  option(value='82') LANCIA
+                  option(value='85') LAND ROVER
+                  option(value='910') LANDWIND
+                  option(value='83') LDV
+                  option(value='168') LEXUS
+                  option(value='176') LINCOLN
+                  option(value='84') LOTUS
+                  option(value='88') MAHINDRA
+                  option(value='90') MARTIN
+                  option(value='89') MARUTI
+                  option(value='91') MASERATI
+                  option(value='92') MAYBACH
+                  option(value='93') MAZDA
+                  option(value='94') MC LAREN
+                  option(value='96') MEGA
+                  option.principal_car(value='97') MERCEDES
+                  option(value='99') MERCURY
+                  option(value='100') METROCAB
+                  option(value='177') MG
+                  option(value='164') MINI
+                  option(value='101') MITSUBISHI
+                  option(value='105') MORGAN
+                  option(value='110') MVS
+                  option(value='112') NISSAN
+                  option(value='113') OLDSMOBILE
+                  option.principal_car(value='115') OPEL
+                  option(value='117') PAGANI
+                  option.principal_car(value='119') PEUGEOT
+                  option(value='120') PGO
+                  option(value='121') PIAGGIO
+                  option(value='122') POLSKI-FIAT
+                  option(value='123') PONTIAC
+                  option(value='124') PORSCHE
+                  option(value='127') PROTON
+                  option(value='132') RELIANT
+                  option.principal_car(value='133') RENAULT
+                  option(value='135') ROLLS-ROYCE
+                  option(value='136') ROVER
+                  option(value='137') SAAB
+                  option(value='138') SAMSUNG
+                  option(value='191') SCAM
+                  option.principal_car(value='139') SEAT
+                  option(value='900') SECMA
+                  option(value='201') SHUANGHUAN
+                  option(value='140') SKODA
+                  option(value='95') SMART
+                  option(value='203') SOMAC
+                  option(value='144') SSANGYONG
+                  option(value='145') SUBARU
+                  option(value='147') SUZUKI-SANTANA
+                  option(value='149') TALBOT SIMCA
+                  option(value='150') TATA
+                  option(value='199') THINK
+                  option(value='153') TOYOTA
+                  option(value='154') TRIUMPH
+                  option(value='165') VAUXHALL
+                  option.principal_car(value='160') VOLKSWAGEN
+                  option(value='159') VOLVO
+                  option(value='162') YUGO
+                  option(value='198') ZAZ
+
+              select
+                option(value='')  Modèle
+                optgroup(label='R11')
+                  option(value='renault-r11-3portes-hayon') R11 Hayon 3 portes (04/1983 > 06/1989)
+                  option(value='renault-r11-5portes-hayon') R11 Hayon 5 portes (04/1983 > 06/1989)
+                optgroup(label='R12')
+                  option(value='renault-r12-5portes-break') R12 Break 5 portes (08/1970 > 12/1979)
+                optgroup(label='R14')
+                  option(value='renault-r14-5portes-hayon') R14 Hayon 5 portes (07/1979 > 06/1983)
+                optgroup(label='R15')
+                  option(value='renault-r15-3portes-coupe') R15 Coupe 3 portes (01/1971 > 12/1979)
+                optgroup(label='R16')
+                  option(value='renault-r16-5portes-hayon') R16 Hayon 5 portes (01/1968 > 12/1980)
+                optgroup(label='R17')
+                  option(value='renault-r17-3portes-coupe') R17 Coupe 3 portes (01/1972 > 12/1979)
+                optgroup(label='R18')
+                  option(value='renault-r18-4portes-berline') R18 Berline 4 portes (01/1978 > 01/1986)
+                  option(value='renault-r18-5portes-break') R18 Break 5 portes (01/1978 > 01/1986)
+                optgroup(label='R19')
+                  option(value='renault-r19-4portes-berline') R19 Berline 4 portes (07/1988 > 04/1997)
+                  option(value='renault-r19-2portes-cabriolet') R19 Cabriolet 2 portes (07/1988 > 04/1997)
+                  option(value='renault-r19-3portes-hayon') R19 Hayon 3 portes (07/1988 > 04/1997)
+                  option(value='renault-r19-5portes-hayon') R19 Hayon 5 portes (07/1988 > 04/1997)
+                optgroup(label='R20')
+                  option(value='renault-r20-5portes-hayon') R20 Hayon 5 portes (10/1975 > 03/1984)
+                optgroup(label='R21')
+                  option(value='renault-r21-4portes-berline') R21 Berline 4 portes (01/1986 > 12/1995)
+                  option(value='renault-r21-5portes-break') R21 Break 5 portes (01/1986 > 12/1995)
+                  option(value='renault-r21-5portes-hayon') R21 Hayon 5 portes (01/1986 > 12/1995)
+                optgroup(label='R25')
+                  option(value='renault-r25-5portes-hayon') R25 Hayon 5 portes (03/1984 > 06/1992)
+                optgroup(label='R30')
+                  option(value='renault-r30-5portes-hayon') R30 Hayon 5 portes (01/1979 > 03/1984)
+                optgroup(label='R4')
+                  option(value='renault-r4-5portes-hayon') R4 Hayon 5 portes (01/1978 > 12/1992)
+                  option(value='renault-r4-2portes-pickup') R4 Pickup 2 portes (01/1978 > 12/1992)
+                optgroup(label='F4')
+                  option(value='renault-f4-3portes-break') F4 Break 3 portes (01/1966 > 08/1988)
+                  option(value='renault-f4-3portes-fourgon') F4 Fourgon 3 portes (01/1966 > 08/1988)
+                optgroup(label='F6')
+                  option(value='renault-f6-2portes-chassis-cabine') F6 Chassis cabine 2 portes (01/1976 > 01/1987)
+                  option(value='renault-f6-3portes-fourgon') F6 Fourgon 3 portes (01/1976 > 01/1987)
+                optgroup(label='R5')
+                  option(value='renault-r5-3portes-hayon') R5 Hayon 3 portes (01/1975 > 06/1986)
+                  option(value='renault-r5-5portes-hayon') R5 Hayon 5 portes (01/1975 > 06/1986)
+                optgroup(label='R5 TURBO')
+                  option(value='renault-r5-turbo-3portes-hayon') R5 TURBO Hayon 3 portes (07/1980 > 06/1986)
+                optgroup(label='R6')
+                  option(value='renault-r6-5portes-hayon') R6 Hayon 5 portes (09/1968 > 04/1987)
+                optgroup(label='R9')
+                  option(value='renault-r9-4portes-berline') R9 Berline 4 portes (07/1981 > 06/1989)
+                optgroup(label='A110')
+                  option(value='renault-a110-2portes-coupe') A110 Coupe 2 portes (01/1970 > 12/1977)
+                optgroup(label='A310')
+                  option(value='renault-a310-2portes-coupe') A310 Coupe 2 portes (03/1971 > 06/1985)
+                optgroup(label='A610')
+                  option(value='renault-a610-3portes-coupe') A610 Coupe 3 portes (04/1991 > 06/1995)
+                optgroup(label='GT')
+                  option(value='renault-gt-2portes-coupe') GT Coupe 2 portes (03/1985 > 04/1991)
+                optgroup(label='AVANTIME')
+                  option(value='renault-avantime-3portes-monospace') AVANTIME Monospace 3 portes (09/2001 > 04/2003)
+                optgroup(label='CAPTUR')
+                  option(value='renault-captur-5portes-hayon') CAPTUR Hayon 5 portes (02/2013 > )
+                optgroup(label='CHEROKEE')
+                  option(value='renault-cherokee-2portes-berline') CHEROKEE Berline 2 portes (01/1977 > 12/1992)
+                  option(value='renault-cherokee-5portes-break') CHEROKEE Break 5 portes (01/1977 > 12/1992)
+                  option(value='renault-cherokee-3portes-fourgon') CHEROKEE Fourgon 3 portes (01/1977 > 12/1992)
+                optgroup(label='CLIO')
+                  option(value='renault-clio-1-3portes-hayon') CLIO I Hayon 3 portes (06/1990 > 08/1998)
+                  option(value='renault-clio-1-5portes-hayon') CLIO I Hayon 5 portes (06/1990 > 08/1998)
+                  option(value='renault-clio-2-4portes-berline') CLIO II Berline 4 portes (03/1998 > 07/2006)
+                  option(value='renault-clio-2-3portes-hayon') CLIO II Hayon 3 portes (03/1998 > 07/2006)
+                  option(value='renault-clio-2-5portes-hayon') CLIO II Hayon 5 portes (03/1998 > 07/2006)
+                  option(value='renault-clio-3-5portes-break') CLIO III Break 5 portes (09/2005 > )
+                  option(value='renault-clio-3-3portes-hayon') CLIO III Hayon 3 portes (09/2005 > )
+                  option(value='renault-clio-3-5portes-hayon') CLIO III Hayon 5 portes (09/2005 > )
+                  option(value='renault-clio-4-5portes-break') CLIO IV Break 5 portes (07/2012 > )
+                  option(value='renault-clio-4-5portes-hayon') CLIO IV Hayon 5 portes (07/2012 > )
+                optgroup(label='CLIO SPORT V6')
+                  option(value='renault-clio-sport-v6-2-3portes-hayon') CLIO SPORT V6 II Hayon 3 portes (03/1998 > 07/2006)
+                optgroup(label='CLIO CAMPUS')
+                  option(value='renault-clio-campus-2-3portes-hayon') CLIO CAMPUS II Hayon 3 portes (07/2006 > 12/2012)
+                  option(value='renault-clio-campus-2-5portes-hayon') CLIO CAMPUS II Hayon 5 portes (07/2006 > 12/2012)
+                optgroup(label='DUSTER')
+                  option(value='renault-duster-5portes-break') DUSTER Break 5 portes (03/2010 > 12/2013)
+                optgroup(label='ESPACE')
+                  option(value='renault-espace-1-5portes-monospace') ESPACE I Monospace 5 portes (07/1984 > 04/1991)
+                  option(value='renault-espace-2-5portes-monospace') ESPACE II Monospace 5 portes (04/1991 > 12/1996)
+                  option(value='renault-espace-3-5portes-monospace') ESPACE III Monospace 5 portes (12/1996 > 09/2002)
+                  option(value='renault-espace-4-5portes-monospace') ESPACE IV Monospace 5 portes (09/2002 > )
+                  option(value='renault-espace-5-5portes-monospace') ESPACE V Monospace 5 portes (02/2015 > )
+                optgroup(label='GRAND ESPACE')
+                  option(value='renault-grand-espace-3-5portes-monospace') GRAND ESPACE III Monospace 5 portes (12/1996 > 09/2002)
+                  option(value='renault-grand-espace-4-5portes-monospace') GRAND ESPACE IV Monospace 5 portes (09/2002 > )
+                optgroup(label='ESTAFETTE')
+                  option(value='renault-estafette-4portes-fourgon') ESTAFETTE Fourgon 4 portes (02/1962 > 12/1981)
+                optgroup(label='EXPRESS')
+                  option(value='renault-express-3portes-break') EXPRESS Break 3 portes (11/1985 > 08/2000)
+                  option(value='renault-express-3portes-fourgon') EXPRESS Fourgon 3 portes (11/1985 > 08/2000)
+                  option(value='renault-express-2portes-pickup') EXPRESS Pickup 2 portes (11/1985 > 08/2000)
+                optgroup(label='FLUENCE')
+                  option(value='renault-fluence-4portes-berline') FLUENCE Berline 4 portes (01/2010 > )
+                optgroup(label='FUEGO')
+                  option(value='renault-fuego-3portes-coupe') FUEGO Coupe 3 portes (02/1980 > 06/1985)
+                optgroup(label='KADJAR')
+                  option(value='renault-kadjar-5portes-break') KADJAR Break 5 portes (06/2015 > )
+                optgroup(label='KANGOO')
+                  option(value='renault-kangoo-1-4portes-break') KANGOO I Break 4 portes (09/1997 > 06/2010)
+                  option(value='renault-kangoo-1-5portes-break') KANGOO I Break 5 portes (09/1997 > 06/2010)
+                  option(value='renault-kangoo-1-3portes-fourgon') KANGOO I Fourgon 3 portes (09/1997 > 06/2010)
+                  option(value='renault-kangoo-1-4portes-fourgon') KANGOO I Fourgon 4 portes (09/1997 > 06/2010)
+                  option(value='renault-kangoo-1-5portes-fourgon') KANGOO I Fourgon 5 portes (09/1997 > 06/2010)
+                  option(value='renault-kangoo-2-3portes-break') KANGOO II Break 3 portes (01/2008 > )
+                  option(value='renault-kangoo-2-4portes-break') KANGOO II Break 4 portes (01/2008 > )
+                  option(value='renault-kangoo-2-5portes-break') KANGOO II Break 5 portes (01/2008 > )
+                  option(value='renault-kangoo-2-3portes-fourgon') KANGOO II Fourgon 3 portes (01/2008 > )
+                  option(value='renault-kangoo-2-4portes-fourgon') KANGOO II Fourgon 4 portes (01/2008 > )
+                  option(value='renault-kangoo-2-5portes-fourgon') KANGOO II Fourgon 5 portes (01/2008 > )
+                  option(value='renault-kangoo-2-2portes-pickup') KANGOO II Pickup 2 portes (01/2008 > )
+                optgroup(label='KOLEOS')
+                  option(value='renault-koleos-5portes-break') KOLEOS Break 5 portes (06/2008 > )
+                optgroup(label='LAGUNA')
+                  option(value='renault-laguna-1-5portes-break') LAGUNA I Break 5 portes (01/1994 > 11/2000)
+                  option(value='renault-laguna-1-5portes-hayon') LAGUNA I Hayon 5 portes (01/1994 > 11/2000)
+                  option(value='renault-laguna-2-5portes-break') LAGUNA II Break 5 portes (11/2000 > 09/2007)
+                  option(value='renault-laguna-2-5portes-hayon') LAGUNA II Hayon 5 portes (11/2000 > 09/2007)
+                  option(value='renault-laguna-3-5portes-break') LAGUNA III Break 5 portes (10/2007 > )
+                  option(value='renault-laguna-3-2portes-coupe') LAGUNA III Coupe 2 portes (10/2007 > )
+                  option(value='renault-laguna-3-5portes-hayon') LAGUNA III Hayon 5 portes (10/2007 > )
+                optgroup(label='LATITUDE')
+                  option(value='renault-latitude-4portes-berline') LATITUDE Berline 4 portes (10/2010 > )
+                optgroup(label='LOGAN')
+                  option(value='renault-logan-1-4portes-berline') LOGAN I Berline 4 portes (06/2005 > 12/2012)
+                  option(value='renault-logan-1-5portes-break') LOGAN I Break 5 portes (06/2005 > 12/2012)
+                  option(value='renault-logan-1-5portes-fourgon') LOGAN I Fourgon 5 portes (06/2005 > 12/2012)
+                  option(value='renault-logan-1-2portes-pickup') LOGAN I Pickup 2 portes (06/2005 > 12/2012)
+                optgroup(label='MASCOTT')
+                  option(value='renault-mascott-2portes-chassis-cabine') MASCOTT Chassis cabine 2 portes (01/2000 > )
+                  option(value='renault-mascott-4portes-chassis-cabine') MASCOTT Chassis cabine 4 portes (01/2000 > )
+                  option(value='renault-mascott-4portes-fourgon') MASCOTT Fourgon 4 portes (01/2000 > )
+                optgroup(label='MASTER')
+                  option(value='renault-master-1-4portes-bus') MASTER I Bus 4 portes (09/1980 > 09/1997)
+                  option(value='renault-master-1-2portes-chassis-cabine') MASTER I Chassis cabine 2 portes (09/1980 > 09/1997)
+                  option(value='renault-master-1-4portes-fourgon') MASTER I Fourgon 4 portes (09/1980 > 09/1997)
+                  option(value='renault-master-1-2portes-plateau') MASTER I Plateau 2 portes (09/1980 > 09/1997)
+                  option(value='renault-master-2-4portes-bus') MASTER II Bus 4 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-5portes-bus') MASTER II Bus 5 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-chassis-auvent') MASTER II Chassis auvent  portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-2portes-chassis-cabine') MASTER II Chassis cabine 2 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-4portes-chassis-cabine') MASTER II Chassis cabine 4 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-4portes-combi') MASTER II Combi 4 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-5portes-combi') MASTER II Combi 5 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-4portes-fourgon') MASTER II Fourgon 4 portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-plancher-auvent') MASTER II Plancher auvent  portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-plancher-cabine') MASTER II Plancher cabine  portes (09/1997 > 04/2010)
+                  option(value='renault-master-2-2portes-plancher-cabine') MASTER II Plancher cabine 2 portes (09/1997 > 04/2010)
+                  option(value='renault-master-3-2portes-benne') MASTER III Benne 2 portes (04/2010 > )
+                  option(value='renault-master-3-4portes-benne') MASTER III Benne 4 portes (04/2010 > )
+                  option(value='renault-master-3-4portes-combi') MASTER III Combi 4 portes (04/2010 > )
+                  option(value='renault-master-3-5portes-combi') MASTER III Combi 5 portes (04/2010 > )
+                  option(value='renault-master-3-3portes-fourgon') MASTER III Fourgon 3 portes (04/2010 > )
+                  option(value='renault-master-3-4portes-fourgon') MASTER III Fourgon 4 portes (04/2010 > )
+                  option(value='renault-master-3-5portes-fourgon') MASTER III Fourgon 5 portes (04/2010 > )
+                  option(value='renault-master-3-2portes-plateau') MASTER III Plateau 2 portes (04/2010 > )
+                  option(value='renault-master-3-4portes-plateau') MASTER III Plateau 4 portes (04/2010 > )
+                optgroup(label='MASTER PROPULSION')
+                  option(value='renault-master-propulsion-2-2portes-benne') MASTER PROPULSION II Benne 2 portes (09/1997 > 04/2010)
+                  option(value='renault-master-propulsion-2-4portes-benne') MASTER PROPULSION II Benne 4 portes (09/1997 > 04/2010)
+                  option(value='renault-master-propulsion-2-2portes-chassis-cabine') MASTER PROPULSION II Chassis cabine 2 portes (09/1997 > 04/2010)
+                  option(value='renault-master-propulsion-2-4portes-chassis-cabine') MASTER PROPULSION II Chassis cabine 4 portes (09/1997 > 04/2010)
+                  option(value='renault-master-propulsion-2-4portes-fourgon') MASTER PROPULSION II Fourgon 4 portes (09/1997 > 04/2010)
+                optgroup(label='MAXITY')
+                  option(value='renault-maxity-2portes-chassis-cabine') MAXITY Chassis cabine 2 portes (01/2007 > )
+                  option(value='renault-maxity-4portes-chassis-cabine') MAXITY Chassis cabine 4 portes (01/2007 > )
+                optgroup(label='MEGANE')
+                  option(value='renault-megane-1-4portes-berline') MEGANE I Berline 4 portes (11/1995 > 06/2003)
+                  option(value='renault-megane-1-5portes-break') MEGANE I Break 5 portes (11/1995 > 06/2003)
+                  option(value='renault-megane-1-2portes-cabriolet') MEGANE I Cabriolet 2 portes (11/1995 > 06/2003)
+                  option(value='renault-megane-1-2portes-coupe') MEGANE I Coupe 2 portes (11/1995 > 06/2003)
+                  option(value='renault-megane-1-5portes-hayon') MEGANE I Hayon 5 portes (11/1995 > 06/2003)
+                  option(value='renault-megane-2-4portes-berline') MEGANE II Berline 4 portes (09/2002 > 08/2009)
+                  option(value='renault-megane-2-5portes-break') MEGANE II Break 5 portes (09/2002 > 08/2009)
+                  option(value='renault-megane-2-2portes-cabriolet') MEGANE II Cabriolet 2 portes (09/2002 > 08/2009)
+                  option(value='renault-megane-2-3portes-hayon') MEGANE II Hayon 3 portes (09/2002 > 08/2009)
+                  option(value='renault-megane-2-5portes-hayon') MEGANE II Hayon 5 portes (09/2002 > 08/2009)
+                  option(value='renault-megane-3-5portes-break') MEGANE III Break 5 portes (11/2008 > )
+                  option(value='renault-megane-3-2portes-cabriolet') MEGANE III Cabriolet 2 portes (11/2008 > )
+                  option(value='renault-megane-3-3portes-coupe') MEGANE III Coupe 3 portes (11/2008 > )
+                  option(value='renault-megane-3-5portes-hayon') MEGANE III Hayon 5 portes (11/2008 > )
+                  option(value='renault-megane-4-5portes-hayon') MEGANE IV Hayon 5 portes (12/2015 > )
+                optgroup(label='MEGANE GENERATION')
+                  option(value='renault-megane-generation-3-5portes-hayon') MEGANE GENERATION III Hayon 5 portes (11/2008 > )
+                optgroup(label='MEGANE SCENIC')
+                  option(value='renault-megane-scenic-1-5portes-monospace') MEGANE SCENIC I Monospace 5 portes (09/1996 > 06/2003)
+                optgroup(label='GRAND MODUS')
+                  option(value='renault-grand-modus-5portes-hayon') GRAND MODUS Hayon 5 portes (09/2004 > 12/2012)
+                optgroup(label='MODUS')
+                  option(value='renault-modus-5portes-hayon') MODUS Hayon 5 portes (09/2004 > 12/2012)
+                optgroup(label='SAFRANE')
+                  option(value='renault-safrane-5portes-hayon') SAFRANE Hayon 5 portes (04/1992 > 08/2000)
+                optgroup(label='SANDERO')
+                  option(value='renault-sandero-1-5portes-hayon') SANDERO I Hayon 5 portes (06/2008 > 10/2012)
+                optgroup(label='GRAND SCENIC')
+                  option(value='renault-grand-scenic-2-5portes-monospace') GRAND SCENIC II Monospace 5 portes (06/2003 > 04/2009)
+                  option(value='renault-grand-scenic-3-5portes-monospace') GRAND SCENIC III Monospace 5 portes (04/2009 > )
+                optgroup(label='SCENIC')
+                  option(value='renault-scenic-2-5portes-monospace') SCENIC II Monospace 5 portes (06/2003 > 04/2009)
+                  option(value='renault-scenic-3-5portes-monospace') SCENIC III Monospace 5 portes (04/2009 > )
+                optgroup(label='SCENIC CONQUEST')
+                  option(value='renault-scenic-conquest-2-5portes-monospace') SCENIC CONQUEST II Monospace 5 portes (06/2003 > 04/2009)
+                optgroup(label='SCENIC XMOD')
+                  option(value='renault-scenic-xmod-3-5portes-monospace') SCENIC XMOD III Monospace 5 portes (04/2009 > )
+                optgroup(label='SPORT SPIDER')
+                  option(value='renault-sport-spider-2portes-cabriolet') SPORT SPIDER Cabriolet 2 portes (12/1995 > 08/2000)
+                optgroup(label='SUPER 5')
+                  option(value='renault-super-5-3portes-hayon') SUPER 5 Hayon 3 portes (10/1984 > 12/1996)
+                  option(value='renault-super-5-5portes-hayon') SUPER 5 Hayon 5 portes (10/1984 > 12/1996)
+                optgroup(label='TALISMAN')
+                  option(value='renault-talisman-4portes-berline') TALISMAN Berline 4 portes (09/2015 > )
+                optgroup(label='THALIA/SYMBOL')
+                  option(value='renault-thalia-symbol-1-4portes-berline') THALIA/SYMBOL I Berline 4 portes (02/2000 > 10/2008)
+                  option(value='renault-thalia-symbol-2-4portes-berline') THALIA/SYMBOL II Berline 4 portes (10/2008 > )
+                optgroup(label='TRAFIC')
+                  option(value='renault-trafic-1-4portes-bus') TRAFIC I Bus 4 portes (08/1982 > 11/2000)
+                  option(value='renault-trafic-1-2portes-chassis-cabine') TRAFIC I Chassis cabine 2 portes (08/1982 > 11/2000)
+                  option(value='renault-trafic-1-4portes-chassis-cabine') TRAFIC I Chassis cabine 4 portes (08/1982 > 11/2000)
+                  option(value='renault-trafic-1-4portes-fourgon') TRAFIC I Fourgon 4 portes (08/1982 > 11/2000)
+                  option(value='renault-trafic-1-2portes-plateau') TRAFIC I Plateau 2 portes (08/1982 > 11/2000)
+                  option(value='renault-trafic-2-4portes-break') TRAFIC II Break 4 portes (10/2001 > )
+                  option(value='renault-trafic-2-4portes-bus') TRAFIC II Bus 4 portes (10/2001 > )
+                  option(value='renault-trafic-2-2portes-chassis-cabine') TRAFIC II Chassis cabine 2 portes (10/2001 > )
+                  option(value='renault-trafic-2-4portes-combi') TRAFIC II Combi 4 portes (10/2001 > )
+                  option(value='renault-trafic-2-5portes-combi') TRAFIC II Combi 5 portes (10/2001 > )
+                  option(value='renault-trafic-2-4portes-fourgon') TRAFIC II Fourgon 4 portes (10/2001 > )
+                  option(value='renault-trafic-2-5portes-fourgon') TRAFIC II Fourgon 5 portes (10/2001 > )
+                  option(value='renault-trafic-2-4portes-isotherme') TRAFIC II Isotherme 4 portes (10/2001 > )
+                  option(value='renault-trafic-2-5portes-isotherme') TRAFIC II Isotherme 5 portes (10/2001 > )
+                  option(value='renault-trafic-3-4portes-combi') TRAFIC III Combi 4 portes (06/2014 > )
+                  option(value='renault-trafic-3-5portes-combi') TRAFIC III Combi 5 portes (06/2014 > )
+                  option(value='renault-trafic-3-4portes-fourgon') TRAFIC III Fourgon 4 portes (06/2014 > )
+                optgroup(label='TWINGO')
+                  option(value='renault-twingo-1-3portes-hayon') TWINGO I Hayon 3 portes (04/1993 > 06/2007)
+                  option(value='renault-twingo-2-3portes-hayon') TWINGO II Hayon 3 portes (06/2007 > )
+                  option(value='renault-twingo-3-5portes-hayon') TWINGO III Hayon 5 portes (06/2014 > )
+                optgroup(label='TWIZY')
+                  option(value='renault-twizy-2portes-berline') TWIZY Berline 2 portes (03/2012 > )
+                optgroup(label='VEL SATIS')
+                  option(value='renault-vel-satis-5portes-hayon') VEL SATIS Hayon 5 portes (01/2002 > 12/2009)
+                optgroup(label='WIND')
+                  option(value='renault-wind-2portes-cabriolet') WIND Cabriolet 2 portes (06/2010 > 12/2013)
+                optgroup(label='WRANGLER')
+                  option(value='renault-wrangler-2portes-cabriolet') WRANGLER Cabriolet 2 portes (01/1990 > 12/1992)
+                optgroup(label='ZOE')
+                  option(value='renault-zoe-5portes-hayon') ZOE Hayon 5 portes (10/2012 > )
+
+              select
+                option(value='')  Motorisation
+                optgroup(label='DIESEL - boîte MANUELLE')
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-6-55cv-diesel-manuelle') 1.6 55cv Diesel MANUELLE
+                optgroup(label='')
+                optgroup(label='ESSENCE - boîte AUTOMATIQUE')
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-4-70cv-essence-automatique') 1.4 70cv Essence AUTOMATIQUE
+                optgroup(label='ESSENCE - boîte MANUELLE')
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-1-47cv-essence-manuelle') 1.1 47cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-2-48cv-essence-manuelle') 1.2 48cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-2-55cv-essence-manuelle') 1.2 55cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-4-60cv-essence-manuelle') 1.4 60cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-4-70cv-essence-manuelle') 1.4 70cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-4-105cv-essence-manuelle') 1.4 105cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-4-115cv-essence-manuelle') 1.4 115cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-7-75cv-essence-manuelle') 1.7 75cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-7-82cv-essence-manuelle') 1.7 82cv Essence MANUELLE
+                  option(nb_sous_modele='1', value='renault-r11-3portes-hayon-1-7-90cv-essence-manuelle') 1.7 90cv Essence MANUELLE
+
+              input(type="submit" value="OK")
+
+            form.form-immat
+              input(type="text" placeholder="Plaque d'immatriculation")
+              input(type="submit" value="OK")
+
+            form.form-cartegrise
+              input(type="text" placeholder="Entrez votre type mine")
+              input(type="submit" value="OK")
+
+      button.searchByCategories.buttonPieces
+        | Rechercher par catégories
+      .tileset
+        // Could be .hidden
+        each item in data.tiles
+          +tile(item.title, item.src, item.color, item.href, item.links)
+
+      footer
+        .social
+          ul
+            li
+              a(href='#')
+                i.flaticon-facebook
+            li
+              a(href='#')
+                i.flaticon-google-plus
+            li
+              a(href='#')
+                i.flaticon-twitter
+            li
+              a(href='#')
+                i.flaticon-pinterest
+        .links
+          ul
+            li
+              a(href='#') À propos de Yakaroulercom
+            li
+              a(href='#') Magasins
+            li
+              a(href='#') Mentions légales
+            li
+              a(href='#') Conditions Générales de Vente
+            li
+              a(href='#') Conditions Générales d'utilisation
