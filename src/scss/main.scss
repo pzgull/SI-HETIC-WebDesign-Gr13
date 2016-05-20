@@ -130,6 +130,11 @@ header {
     height: 34px;
     cursor: pointer;
     outline: none;
+
+    &:active {
+      width: 35px;
+      height: 35px;
+    }
   }
 }
 
@@ -196,7 +201,7 @@ header {
     outline: none;
     padding: 5px 30px;
 
-    &:hover {
+      &:hover {
       background: $orange;
       color: $white;
       transition: .5s;
@@ -303,7 +308,12 @@ header {
         padding: 35px 0;
         font: 16px $futura;
         color: $white;
-        &:hover {
+
+        @media screen and (max-width: $bp-small) {
+          font: 3vw $futura;
+        }
+
+          &:hover {
           cursor: pointer;
           background: $lightergray;
           color: $darkgray;
@@ -515,6 +525,13 @@ footer {
   justify-content: space-between;
   margin: 0 100px;
 
+  nav ul {
+    li:hover {
+      border-bottom: 1px solid $darkgray;
+      line-height: 2px;
+    }
+  }
+
   .newsletter {
 
     p {
@@ -540,14 +557,6 @@ footer {
         color: $orange;
       }
     }
-
-    nav {
-      ul {
-        li:hover {
-          background: $white;
-        }
-      }
-    }
   }
 
   .communaute {
@@ -564,8 +573,9 @@ footer {
 
 .display {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
   background: $white;
   padding: 50px;
 }
