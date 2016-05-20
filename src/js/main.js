@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#' + category).on('click', function() {
       $('.search-module').trigger('clear');
       $(this).addClass('selected');
-      $('.form-' + category).addClass('active');
+      $('.form-' + category).addClass('actived');
     });
   });
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
     $(this).find('.display')
     .children('form').each(function(elt) {
-      $(this).removeClass('active');
+      $(this).removeClass('actived');
     });
   });
 

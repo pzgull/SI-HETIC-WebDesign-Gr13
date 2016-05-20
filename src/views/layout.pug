@@ -12,11 +12,14 @@ html(lang="fr")
 
   body
     include ./_mixins.pug
-    include ./header.pug
+    section.normal
+      include ./header.pug
 
-    block content
+      block content
 
-    include ./footer.pug
+      include ./footer.pug
+
+    include ./sm-menu.pug
 
     script(src="./scripts/jquery.min.js")
     script(src="./scripts/main.js")
