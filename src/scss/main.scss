@@ -245,6 +245,11 @@ header {
 
   .display {
     background: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 
     select {
       display: inline-block;
@@ -571,26 +576,29 @@ footer {
   }
 }
 
-.display {
+.display-footer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   background: $white;
   padding: 50px;
+
+  li {
+    list-style-type: none;
+    line-height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $darkgray;
+  }
+
+  a:hover {
+    color: $orange;
+    transition: 1s;
+  }
 }
 
-.display li {
-  list-style-type: none;
-  line-height: 20px;
-}
 
-.display a {
-  text-decoration: none;
-  color: $darkgray;
-}
 
-.display a:hover {
-  color: $orange;
-  transition: 1s;
-}
